@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #1e3a8a; 
+  position: relative;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  color: black; 
+  background-color: #f0ffff;
+  border-radius: 999px;
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover .chevron-icon {
+  transform: rotate(180deg); 
+}
+
+.nav-link.active-nav-link .chevron-icon {
+  transform: rotate(180deg); 
+}
