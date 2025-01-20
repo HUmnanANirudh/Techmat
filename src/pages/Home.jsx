@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar/Navbar";
 import HomeAbout from "../components/Home/About";
-import Hero from "../components/Home/hero";
+import Hero from "../components/Home/Hero";
 import Diverse from "../components/Home/Diverse";
 import Clientele from "../components/Home/Cliente";
 import Contact from "../components/cards/Contact";
