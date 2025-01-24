@@ -1,6 +1,6 @@
 const CompanyInfo = () => {
   return (
-    <div className="bg-gray-50 flex flex-col md:flex-row justify-center gap-4 py-8 md:py-16 px-4 md:px-8">
+    <div className="bg-white flex flex-col md:flex-row justify-center gap-4 py-8 md:py-16 px-4 md:px-8">
       <div className="flex flex-col items-start justify-center gap-8 w-full md:max-w-screen-xl py-1">
         <h1 className="text-black text-2xl md:text-3xl font-bold mb-4">About Us</h1>
         <p className="text-sm md:text-base lg:text-lg">
@@ -8,18 +8,18 @@ const CompanyInfo = () => {
         </p>
       </div>  
       <div className="relative w-full flex justify-center items-start">
-        <div className="w-full sm:w-64 md:w-80 lg:w-96 h-full mb-10">
+        <div className="w-72 sm:w-64 md:w-80 lg:w-96 h-72 mb-10">
           <img
             src="https://www.unithermfurnaces.com/frontend/assets/images/about3.webp"
             alt="Heat treatment equipment"
             className="rounded-md shadow-2xl z-0 w-full h-auto"
           />
         </div>
-        <div className="absolute bottom-0 left-5 sm:left-10 md:left-20 w-24 sm:w-32 md:w-40">
+        <div className="absolute bottom-0 left-5 sm:left-10 md:bottom-0 md:left-10 w-24 sm:w-32 md:w-40">
           <img
             src="https://www.unithermfurnaces.com/frontend/assets/images/about4.webp"
             alt="Engineers at work"
-            className="shadow-lg w-full h-auto"
+            className="shadow-lg w-full h-auto hidden md:block"
           />
         </div>
       </div>

@@ -2,11 +2,13 @@ import Navbar from "../components/Navbar/Navbar";
 import HomeAbout from "../components/Home/About";
 import Hero from "../components/Home/Hero";
 import Diverse from "../components/Home/Diverse";
+import Info2 from "../components/Home/Info2";
 import Contact from "../components/cards/Contact";
 import Info from "../components/Home/Info";
 import Footer from "../components/Footer/footer";
 
 import { memo } from "react";
+
 const Home = () => {
   return (
     <div className="flex flex-col items-center gap-2">
@@ -18,6 +20,7 @@ const Home = () => {
         <HomeAbout />
       </section>
       <Diverse />
+      <Info2/>
       <Contact/>
       <Info/>
       <Footer/>

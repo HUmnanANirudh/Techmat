@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react"
 //pages
 import About from "./pages/About"
 import Home from "./pages/Home"
-import Services from "./pages/Services"
+import Service from "./pages/Service"
 import Contact from "./pages/Contact"
 import Infra from "./pages/Infra"
 import Quality from "./pages/Quality"
@@ -16,7 +16,7 @@ const PageTransition = () => {
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<PageWrapper><Home/></PageWrapper>}/>
         <Route path="/about" element={<PageWrapper><About/></PageWrapper>}/>
-        <Route path="/service" element={<PageWrapper><Services/></PageWrapper>}/>
+        <Route path="/service" element={<PageWrapper><Service/></PageWrapper>}/>
         <Route path="/quality">
         <Route path="/quality/metallurgy_lab" element={<PageWrapper><Quality/></PageWrapper>}/>
         <Route path="/quality/certificates" element={<PageWrapper><Quality/></PageWrapper>}/>

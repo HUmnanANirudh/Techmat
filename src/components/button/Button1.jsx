@@ -6,7 +6,7 @@ const Button1 = ({text, onClick, X }) =>{
         animate={{opacity:1,x:0}}
         transition={{duration:0.6,ease:"easeIn", type:"spring", delay:1}}
         onClick={()=>onClick(X)}
-  className="flex justify-center gap-2 items-center mx-auto shadow-xl text-base md:text-lg lg:text-xl xl:text-2xl bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10  px-2 py-1 md:px-4 md:py-2  overflow-hidden border-2 rounded-full group"
+  className="flex justify-center gap-2 items-center mx-auto shadow-xl text-base md:text-lg lg:text-xl bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10  px-2 py-1 md:px-4 md:py-2  overflow-hidden border-2 rounded-full group"
 >
  {text}
   <svg

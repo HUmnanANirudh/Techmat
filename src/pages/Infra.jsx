@@ -1,11 +1,21 @@
 import Navbar from "../components/Navbar/Navbar"
-
+import Head from "../components/Hero/Head";
+import Footer from "../components/Footer/footer";
+import Table from "../components/Infra/Table";
+import Info from "../components/Home/Info";
+import Contact from "../components/cards/Contact";
 const Infra = () =>{
     return(
-        <div>
-            <Navbar/>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nulla earum, sunt neque maiores nisi eligendi totam nesciunt quos, harum veritatis iure. Cum velit voluptatem enim voluptatibus perferendis, ipsa esse iure possimus, autem provident quaerat minus praesentium iusto ullam blanditiis impedit aliquid quia natus labore dolore ipsam ad ex laboriosam odit. Dolores debitis accusantium distinctio, facere ipsum rem voluptatem delectus ullam voluptates ut dignissimos quisquam placeat expedita similique. Quidem tenetur, sapiente illum ipsum officiis eligendi. Ullam, nesciunt iure rem est facilis quaerat dolorum sint, eos ipsa officiis consequuntur maiores beatae necessitatibus quidem soluta nisi ipsum minus! Magnam quisquam minima sint?
-        </div>
+    <div className="flex flex-col items-center gap-2">
+      <div className="fixed top-0 left-0 w-screen z-50 bg-white">
+        <Navbar />
+      </div>
+      <Head img={"https://accuratebearing.in/wp-content/uploads/2023/01/heattreatment.jpg"} text={"Our Infrastructure"}/>
+     <Table/>
+     <Contact/>
+     <Info/>
+      <Footer/>
+      </div>
     )
 }
 export default Infra;

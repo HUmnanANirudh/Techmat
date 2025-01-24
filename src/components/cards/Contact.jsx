@@ -1,33 +1,35 @@
 import { Link } from "react-router-dom";
 import Button2 from "../button/Button2";
-
-const scrollToTop = () => {
-  window.scrollTo(0, 0)
-}
+import { memo } from "react";
+const scrollToTop = (delay = 500) => {
+  setTimeout(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, delay);
+};
 
 const Contact = () => {
   return (
-    <div className="flex  justify-center mt-10">
-      <div className="flex flex-col md:flex-row items-center w-80 md:w-full bg-blue-800 pr-4">
-        <div className="">
-          <img
-            src="https://www.unithermfurnaces.com/frontend/assets/images/quality.webp"
-            className="w-full h-44"
-          />
+    <div className="flex justify-center mt-10">
+      <div className="relative w-full max-w-screen-lg">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent z-10"></div>
+        <img
+          src="https://www.can-eng.com/Portals/0/EasyDNNNews/3/images/110DSC01191-min-1200-1200-p-L-97.jpeg"
+          loading="lazy"
+          className="w-full h-60 object-cover sm:h-80 md:h-60 lg:h-72"
+          alt="Heat Treatment Solutions"
+        />
+        <div className="absolute inset-0 flex flex-col justify-center items-start px-4 z-20 sm:px-8 md:px-12 lg:px-16">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-4">
+            Delivering top-notch heat treatment <br /> solutions
+          </h1>
+
+          <Link to="/contact" onClick={() => scrollToTop()}>
+            <Button2 text={"Contact us"} />
+          </Link>
         </div>
-        <div className="flex justify-between p-12">
-          <div className="flex flex-wrap">
-            <h1 className="text-2xl font-extrabold text-white">
-              Delivering top-notch heat treatment
-              <br /> solutions
-            </h1>
-          </div>
-        </div>
-        <Link to={"/contact"} onClick={()=>scrollToTop()}>
-        <Button2 text={"Contact us"}/>
-        </Link>
       </div>
     </div>
   );
 };
-export default Contact;
+
+export default memo(Contact);

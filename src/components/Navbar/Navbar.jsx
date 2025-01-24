@@ -14,8 +14,8 @@ const Qualityinfo = [
   { id: 4, label: "Quality Policy" },
 ];
 
-const scrollToTop = () => {
-  window.scrollTo(0, 0);
+const scrollToTop = (delay = 500) => {
+  setTimeout(()=>{window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}, delay);
 };
 
 const Navbar = () => {
@@ -85,7 +85,7 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
         <NavLink
-          to="/contact"
+          to="/infrasturcture"
           className="nav-link"
           onClick={() => scrollToTop()}
         >
@@ -100,20 +100,32 @@ const Navbar = () => {
         </NavLink>
       </nav>
       <div className="sm:hidden pt-1 mr-1">
-        <GiHamburgerMenu className="text-2xl text-center cursor-pointer" onClick={handleNav} />
+        <GiHamburgerMenu
+          className="text-2xl text-center cursor-pointer"
+          onClick={handleNav}
+        />
         <AnimatePresence>
           {Show && (
-            <motion.div 
-            initial={{opacity:0,y: '-100%'}}
-            animate={{opacity:1,y:0,transition: {
-              duration: 0.5,
-              ease: "easeIn",
-            },}}
-            exit={{opacity:0,y: '100%',transition:{
-              duration:0.4,
-              ease:"easeOut"
-            }}}
-            className="fixed sm:hidden top-0 left-0 w-screen h-screen bg-gray-50 ">
+            <motion.div
+              initial={{ opacity: 0, y: "-100%" }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.5,
+                  ease: "easeIn",
+                },
+              }}
+              exit={{
+                opacity: 0,
+                y: "100%",
+                transition: {
+                  duration: 0.4,
+                  ease: "easeOut",
+                },
+              }}
+              className="fixed sm:hidden top-0 left-0 w-screen h-screen bg-gray-50 "
+            >
               <div className="flex flex-col">
                 <div className="flex justify-between p-1.5">
                   <div className="flex justify-center items-center">
@@ -124,7 +136,10 @@ const Navbar = () => {
                     />
                   </div>
                   <div className=" pt-2">
-                    <IoCloseSharp className="text-3xl cursor-pointer" onClick={handleNav} />
+                    <IoCloseSharp
+                      className="text-3xl cursor-pointer"
+                      onClick={handleNav}
+                    />
                   </div>
                 </div>
                 <nav className="flex flex-col justify-center items-center text-center text-base gap-4 mt-4 ">
@@ -151,7 +166,7 @@ const Navbar = () => {
                   </NavLink>
 
                   <NavLink
-                    to="/contact"
+                    to="/infrasturcture"
                     className="nav-link"
                     onClick={() => scrollToTop()}
                   >
@@ -219,5 +234,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;

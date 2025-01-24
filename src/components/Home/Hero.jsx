@@ -15,7 +15,7 @@ const Hero = () => {
       " "
     );
   return (
-    <div className="relative w-full h-[70vh]  md:h-[70vh] lg:h-[80vh] xl:h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[90vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent z-10"></div>
         <img
