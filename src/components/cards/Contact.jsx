@@ -7,8 +7,8 @@ const scrollToTop = () => {
 
 const Contact = () => {
   return (
-    <div className="flex justify-center mt-10">
-      <div className="flex items-center bg-blue-800 pr-4">
+    <div className="flex  justify-center mt-10">
+      <div className="flex flex-col md:flex-row items-center w-80 md:w-full bg-blue-800 pr-4">
         <div className="">
           <img
             src="https://www.unithermfurnaces.com/frontend/assets/images/quality.webp"

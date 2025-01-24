@@ -6,6 +6,8 @@ import About from "./pages/About"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
 import Contact from "./pages/Contact"
+import Infra from "./pages/Infra"
+import Quality from "./pages/Quality"
 
 const PageTransition = () => {
   const location = useLocation();
@@ -13,10 +15,15 @@ const PageTransition = () => {
     <AnimatePresence mode="wait">
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<PageWrapper><Home/></PageWrapper>}/>
-        <Route path="/about">
-          <Route path="/about/Company" element={<PageWrapper><About/></PageWrapper>}/>
-        </Route>
+        <Route path="/about" element={<PageWrapper><About/></PageWrapper>}/>
         <Route path="/service" element={<PageWrapper><Services/></PageWrapper>}/>
+        <Route path="/quality">
+        <Route path="/quality/metallurgy_lab" element={<PageWrapper><Quality/></PageWrapper>}/>
+        <Route path="/quality/certificates" element={<PageWrapper><Quality/></PageWrapper>}/>
+        <Route path="/quality/scada_&_qualitytools" element={<PageWrapper><Quality/></PageWrapper>}/>
+        <Route path="/quality/quality_policy" element={<PageWrapper><Quality/></PageWrapper>}/>
+        </Route>
+        <Route path="/infrasturcture" element={<PageWrapper><Infra/></PageWrapper>}/>
         <Route path="/contact" element={<PageWrapper><Contact/></PageWrapper>}/>
       </Routes>
     </AnimatePresence>

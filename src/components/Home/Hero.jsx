@@ -15,18 +15,18 @@ const Hero = () => {
       " "
     );
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[70vh]  md:h-[70vh] lg:h-[80vh] xl:h-[90vh] overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent z-10"></div>
         <img
           src="https://www.unithermfurnaces.com/storage/app/public/homepage_banners/OZqLWJgPTmyr5QLsNEL69ndXE4E9GE7qMQvjVjOj.webp"
           alt="Industrial Manufacturing Banner"
-          className="w-full h-full object-cover object-center transform scale-105 animate-slow-zoom"
+          className="w-full h-full object-cover object-center transform scale-105"
         />
       </div>
       <div className="relative z-20 h-full flex items-center justify-center px-4 md:px-8">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight whitespace-nowrap text-center">
+          <h1 className="text-[27px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight whitespace-nowrap text-center">
             <div>
               {headingLine1.map((word, i) => (
                 <motion.span
@@ -43,7 +43,7 @@ const Hero = () => {
                 </motion.span>
               ))}
             </div>
-            <div className="pt-2 ">
+            <div className="pt-2 text-3xl md:text-4xl lg:text-5xl">
               {headingLine2.map((word, i) => (
                 <motion.span
                   key={i}
@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
           </h1>
 
-          <div className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto text-center">
+          <div className="text-base md:text-lg lg:text-xl  text-gray-200 max-w-2xl mx-auto text-center">
             {subheading.map((word, i) => (
               <motion.span
                 key={i}

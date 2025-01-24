@@ -8,7 +8,7 @@ import { memo } from "react";
 const Contact = () => {
   return (
     <div className="flex flex-col">
-      <div className="fixed top-0 left-0 w-full z-50 bg-white">
+      <div className="fixed top-0 left-0 w-screen z-50 bg-white">
         <Navbar />
       </div>
       <Head img={"https://www.unithermfurnaces.com/frontend/assets/images/contactBanner.webp"} text={"Contacts"}/>
