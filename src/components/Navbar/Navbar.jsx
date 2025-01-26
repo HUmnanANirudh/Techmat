@@ -14,8 +14,8 @@ const Qualityinfo = [
   { id: 4, label: "Quality Policy" },
 ];
 
-const scrollToTop = (delay = 500) => {
-  setTimeout(()=>{window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}, delay);
+const scrollToTop = (delay=500) => {
+  setTimeout(()=>{window.scrollTo({ top: 0, left: 0, behavior: "smooth" })},delay);
 };
 
 const Navbar = () => {
@@ -77,7 +77,7 @@ const Navbar = () => {
                 }}
                 className="absolute top-full left-0 bg-white text-black shadow-lg rounded-md p-4"
               >
-                <Link to={"/service"}>
+                <Link to={"/service"} onClick={scrollToTop}>
                   <Dropdown items={Qualityinfo} onClick={() => scrollToTop()} />
                 </Link>
               </motion.div>
