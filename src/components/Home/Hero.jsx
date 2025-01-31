@@ -17,15 +17,15 @@ const Hero = () => {
     const images = [
       {
         id: 1,
-        img: "https://www.unithermfurnaces.com/storage/app/public/homepage_banners/OZqLWJgPTmyr5QLsNEL69ndXE4E9GE7qMQvjVjOj.webp",
+        img: "https://www.dl.dropboxusercontent.com/scl/fi/qdcxy6q6fysnkzfduep9t/WhatsApp-Image-2025-01-31-at-18.13.22_1a0afd3f.jpg?rlkey=d7i4mpu33osv0lf7s6e97h0cz&st=p9onst3o&dl=0",
       },
       {
         id: 2,
-        img: "https://media.istockphoto.com/id/912174592/photo/modern-pipe-rolling-plant-with-steel-tubes.jpg?s=612x612&w=0&k=20&c=j8Q5_VF2vC8Gz24f5sE31LqYp0tLRaIopEFUHoRSqA8=",
+        img: "https://www.dl.dropboxusercontent.com/scl/fi/dmt8hfch1pn1fpwlgt15i/WhatsApp-Image-2025-01-31-at-18.05.34_775231c5.jpg?rlkey=1h1lazatjpzz6sncy0cwcoq2u&st=helz1eyz&dl=0",
       },
       {
         id: 3,
-        img: "https://media.istockphoto.com/id/2191758317/photo/iron-rods-are-cut-off-by-the-heavy-cutting-machine-fire-sparks-are-coming-out-from-there.jpg?s=612x612&w=0&k=20&c=_6e0qsv9hxBYbe6CtVVjjh52Y0d-RYIKEMviWeyOL9U=",
+        img: "https://www.dl.dropboxusercontent.com/scl/fi/uzvtv5vt2inzpxuj22nxt/WhatsApp-Image-2025-01-31-at-18.21.38_19185d04.jpg?rlkey=a0u8o0qai78djpr7nkk1n6d6w&st=841nstv4&dl=0",
       },
     ];
     const [currentIndex,setcurrentIndex] = useState(0);
