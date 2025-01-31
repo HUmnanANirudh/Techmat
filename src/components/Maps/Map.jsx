@@ -5,11 +5,13 @@ import { useState } from "react";
 import Button3 from "../button/Button3";
 import Plant1 from "./Plant1";
 import Plant2 from "./Plant2";
+import Plant3 from "./Plant3";
 
 //json
 const Maps = [
-  { id: 1, label: "Ambattur", Component: Plant1 },
-  { id: 2, label: "Ayanambakkam", Component: Plant2 },
+  { id: 1, label: "Unit I Bhiwadi", Component: Plant1 },
+  { id: 2, label: "Unit II Bhiwadi", Component: Plant2 },
+  { id: 3, label: "Unit III Khushkhera", Component: Plant3 },
 ];
 
 const Map = () => {

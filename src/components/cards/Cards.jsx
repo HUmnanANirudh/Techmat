@@ -2,7 +2,7 @@
 
 const Card1 = ({ img, text }) => {
   return (
-    <div className="relative group overflow-hidden cursor-pointer w-full sm:w-80 md:w-80 mx-auto border-2 border-blue-200">
+    <div className="relative group overflow-hidden cursor-pointer w-full sm:w-80 md:w-80 mx-auto border-4 border-blue-200">
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/10 z-10"></div>
       <img
         src={img}

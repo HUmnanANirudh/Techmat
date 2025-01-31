@@ -1,70 +1,91 @@
+import { motion } from "motion/react";
 const Timeline = () => {
   const milestones = [
     {
-      year: '2017',
-      title: 'Idea Conception',
-      description:
-        'Brainstorming and generating the initial concept of the project.',
+      year: '1992',
+      title: 'Company Incorporation',
+      description: 'Techno Thermal Treaters Pvt. Ltd. was incorporated in Delhi, marking the beginning of its journey in the heat treatment industry.',
     },
     {
-      year: '2018',
-      title: 'Prototype Development',
-      description:
-        'Developing the first version of the product for internal testing.',
+      year: '1993', 
+      title: 'Commercial Operations Begin',
+      description: 'Started operations with the first Gas Carburizing Furnace, setting the foundation for future growth.',
     },
     {
-      year: '2019',
-      title: 'Initial Launch',
-      description: 'Launching the product to a small audience for feedback.',
+      year: '1998',
+      title: 'Expansion of Capacity',
+      description: 'Added a second Gas Carburizing Line to meet increasing industry demand.',
     },
     {
-      year: '2020',
-      title: 'Growth Phase',
-      description: 'Expanding the user base and improving product features.',
+      year: '2004',
+      title: 'Scaling Up',
+      description: 'Commissioned a third Gas Carburizing Line, reinforcing the company’s growth trajectory.',
+    },
+    {
+      year: '2007',
+      title: 'Diversification into SQF',
+      description: 'Launched the **Specialty Quench & Temper Furnace (SQF) Division** at Bhiwadi Unit II, diversifying service offerings.',
+    },
+    {
+      year: '2010',
+      title: 'Enhanced Production',
+      description: 'Expanded SQF capabilities with the addition of a second **SQF Line** at Bhiwadi.',
+    },
+    {
+      year: '2015',
+      title: 'Further Expansion',
+      description: 'Commissioned a third **SQF Line** at Bhiwadi to enhance production capacity.',
     },
     {
       year: '2021',
-      title: 'Scaling the Platform',
-      description:
-        'Increasing infrastructure capacity and improving performance.',
+      title: 'TTPL Goes Green',
+      description: 'Implemented **Solar Power Generation Modules** at Bhiwadi, taking a step toward sustainable energy usage.',
     },
     {
       year: '2022',
-      title: 'Global Expansion',
-      description:
-        'Launching the platform internationally and entering new markets.',
+      title: 'Advanced Technology Adoption',
+      description: 'Set up and commenced **commercial operations for Gas Nitriding Equipment**, offering advanced heat treatment solutions.',
     },
-  ];
-
+    {
+      year: '2024',
+      title: 'New Greenfield Expansion',
+      description: 'Established **Unit III at Khushkhera**, further strengthening TTPL’s market presence and production capacity.',
+    }
+  ]  
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h2 className="text-4xl font-bold text-center mb-12">Project Timeline</h2>
-      <div className="relative my-20">
-        {milestones.map((milestone, index) => (
-          <div
-            className={`mb-10 ml-6 flex ${
-              index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-            }`}
-            key={index}
-          >
-            <div className="flex-shrink-0 w-1/3 p-4">
-            </div>
-            <div className="flex flex-col w-2/3 p-6 bg-blue-50 border border-blue-200 rounded-lg shadow-md dark:bg-gray-900 dark:border-gray-700">
-              <time className="mb-2 text-sm font-normal text-blue-500 dark:text-gray-500">
-                {milestone.year}
-              </time>
-              <h3 className="text-lg font-semibold text-blue-900 dark:text-white">
-                {milestone.title}
-              </h3>
-              <p className="text-base font-normal text-blue-600 dark:text-gray-400">
-                {milestone.description}
-              </p>
-            </div>
-          </div>
-        ))}
+      <div className="container mx-auto px-4 py-12">
+        <h1 className="text-4xl font-bold text-center mb-12">Our Journey</h1>
+        <div className="relative my-20 flex flex-col space-y-12">
+          {milestones.map((milestone, index) => (
+            <motion.div
+              key={index}
+              className={`flex flex-col md:flex-row items-center md:items-start ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <div className="hidden md:flex items-center justify-center w-1/3 p-4">
+                <div className="w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg"></div>
+              </div>
+              <div className="w-full md:w-2/3 p-6 rounded-lg shadow-md bg-gray-900 border border-gray-700 text-start md:text-left">
+                <time className="mb-2 text-base font-bold text-gray-500">
+                  {milestone.year}
+                </time>
+                <h3 className="text-lg font-semibold text-white">
+                  {milestone.title}
+                </h3>
+                <p className="text-base font-normal text-gray-400 text-balance">
+                  {milestone.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
 export default Timeline;

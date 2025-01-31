@@ -2,26 +2,27 @@ const Mission = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 bg-white w-full px-4 sm:px-10 md:px-16 lg:px-28 gap-x-8 gap-y-12 mb-16 md:my-40 p-4">
       <div className="flex flex-col justify-center px-4 md:px-0">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">Vision</h2>
-        <p className="text-gray-600 text-base mb-8">
-          Be the leader in atmospheric heat treatment services by consistently
-          delivering technically competent and reliable solutions that meet
-          global standards.
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
+          Vision
+        </h2>
+        <p className="text-gray-600 text-base mb-8 text-justify">
+          To be a successful customer oriented company globally by meet or
+          exceed our customer needs and expectations by delivering cost
+          effective, right quality and customer oriented technology solutions on
+          time
         </p>
 
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">Our Mission</h2>
-        <ul className="list-disc list-inside text-gray-600 space-y-2 text-base">
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
+          Our Mission
+        </h2>
+        <ul className="list-disc list-inside text-gray-600 space-y-2 text-base text-justify">
           <li>
-            We will continue to improve customer satisfaction through consistent
-            quality, on-time delivery, and value addition.
+            Become World Class and Reliable Heat Treatment solutions provider.
           </li>
+          <li>Preferred supplier with all heat treatment solutions</li>
           <li>
-            We will provide a safe working environment and nurture talent by
-            providing opportunities for learning and growth.
-          </li>
-          <li>
-            We will grow profitably through investments in our people, emerging
-            technologies, infrastructure development, and new partnerships.
+            Preferred Company for employees to work & providing benefits to
+            stakeholders.
           </li>
           <li>
             We will continuously improve key business processes to meet & exceed

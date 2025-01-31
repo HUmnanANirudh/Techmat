@@ -1,6 +1,9 @@
 import { AnimatePresence, motion } from "motion/react";
 import Button from "../button/Button1";
 import { useEffect, useState } from "react";
+import img1 from "../../assets/1.jpg";
+import img2 from "../../assets/2.jpg";
+import img3 from "../../assets/3.jpg";
 const Hero = () => {
   const Scroll = (SectionId) => {
     const Section = document.getElementById(SectionId);
@@ -17,15 +20,15 @@ const Hero = () => {
     const images = [
       {
         id: 1,
-        img: "https://www.dl.dropboxusercontent.com/scl/fi/qdcxy6q6fysnkzfduep9t/WhatsApp-Image-2025-01-31-at-18.13.22_1a0afd3f.jpg?rlkey=d7i4mpu33osv0lf7s6e97h0cz&st=p9onst3o&dl=0",
+        img: img1, 
       },
       {
         id: 2,
-        img: "https://www.dl.dropboxusercontent.com/scl/fi/dmt8hfch1pn1fpwlgt15i/WhatsApp-Image-2025-01-31-at-18.05.34_775231c5.jpg?rlkey=1h1lazatjpzz6sncy0cwcoq2u&st=helz1eyz&dl=0",
+        img: img2,
       },
       {
         id: 3,
-        img: "https://www.dl.dropboxusercontent.com/scl/fi/uzvtv5vt2inzpxuj22nxt/WhatsApp-Image-2025-01-31-at-18.21.38_19185d04.jpg?rlkey=a0u8o0qai78djpr7nkk1n6d6w&st=841nstv4&dl=0",
+        img: img3,
       },
     ];
     const [currentIndex,setcurrentIndex] = useState(0);
@@ -51,6 +54,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
           <img
           src={image.img}
+          loading="lazy"
           alt="Industrial Manufacturing Banner"
           className="w-full h-full object-cover object-center transform scale-105"/>
           </motion.div>

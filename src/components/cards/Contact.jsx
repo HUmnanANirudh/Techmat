@@ -6,14 +6,14 @@ const scrollToTop = (delay = 500) => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, delay);
 };
-
+import img1 from "../../assets/4.jpg";
 const Contact = () => {
   return (
     <div className="flex justify-center mt-10">
       <div className="relative w-full max-w-screen-lg">
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent z-10"></div>
         <img
-          src="https://www.can-eng.com/Portals/0/EasyDNNNews/3/images/110DSC01191-min-1200-1200-p-L-97.jpeg"
+          src={img1}
           loading="lazy"
           className="w-full h-60 object-cover sm:h-80 md:h-60 lg:h-72"
           alt="Heat Treatment Solutions"
