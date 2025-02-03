@@ -37,19 +37,19 @@ const Diverse = () => {
           img={
             "https://www.unithermfurnaces.com/frontend/assets/images/Gas-NitridingIMG-FIGMA280X385.webp"
           }
-          text={"Gas Nitriding"}
+          text={"Gas Nitriding/Ox-Nitriding"}
         />
-        <Card1
+        {/* <Card1
           img={
             "https://www.unithermfurnaces.com/frontend/assets/images/Hardening-under-protective-IMG285X380.webp"
           }
           text={"Steam Treatment Process"}
-        />
+        /> */}
         <Card1
           img={
             "https://www.unithermfurnaces.com/frontend/assets/images/Gas-NitrocarburizingIMG-FIGMA280X385.webp"
           }
-          text={"Gas Nitrocarburizing"}
+          text={"Gas Nitrocarburizing/Ox-Nitriding"}
         />
       </div>
     </div>

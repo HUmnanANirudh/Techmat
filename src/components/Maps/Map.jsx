@@ -42,7 +42,6 @@ const Map = () => {
           <Suspense
             fallback={
               <div className="relative w-full m-96 p-10 animate-pulse">
-                {/* Loading state */}
               </div>
             }
           >
@@ -53,7 +52,6 @@ const Map = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
             >
-              {/* Render the current component */}
               {CurrentComponent && <CurrentComponent />}
             </motion.div>
           </Suspense>

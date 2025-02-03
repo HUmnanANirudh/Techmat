@@ -1,16 +1,4 @@
-const data = [
-    { type: "Sealed Quench Furnace", capacity: "600kg", units: 20 },
-    { type: "Sealed Quench Furnace", capacity: "1200kg", units: 7 },
-    { type: "Sealed Quench Furnace", capacity: "1500kg", units: 8 },
-    { type: "Gas Nitriding Furnace", capacity: "600kg", units: 1 },
-    { type: "Gas Nitriding Furnace", capacity: "1200kg", units: 1 },
-    { type: "Gas Nitriding Furnace", capacity: "1500kg", units: 8 },
-    { type: "Sub Zero", capacity: "N/A", units: 4 },
-    { type: "Shot Blasting", capacity: "N/A", units: 4 },
-    { type: "Fully Equipped Metallurgy Lab", capacity: "N/A", units: 3 }
-  ];
-  
-  const Table = () => {
+const Table = ({data}) => {
     return (
       <div className="flex flex-col justify-center items-center my-20">
         <div className="w-full px-4 md:px-0">

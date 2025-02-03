@@ -37,9 +37,7 @@ const Services = () => {
             <ul className="list-disc pl-5">
               <li>Atmospheric Heat Treatment</li>
               <li>Vacuum Heat Treatment</li>
-              <li>Plasma Nitriding</li>
               <li>Steam Treatment</li>
-              <li>Sub Zero Treatment</li>
             </ul>
           </div>
           <div>
@@ -71,7 +69,7 @@ const Services = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">Quality Management</h2>
             <ul className="list-disc pl-5">
-              <li>IATF 16949</li>
+              <li>ISO 9001</li>
               <li>CQI-9 Certification (by tier-1 & OEMs)</li>
               <li>Customer audits</li>
             </ul>
@@ -81,7 +79,6 @@ const Services = () => {
             <ul className="list-disc pl-5">
               <li>Technical recommendations</li>
               <li>Development and qualification of new products/processes</li>
-              <li>Technical Seminars</li>
             </ul>
           </div>
         </div>

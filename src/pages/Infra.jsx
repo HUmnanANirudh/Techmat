@@ -4,6 +4,17 @@ import Footer from "../components/Footer/footer";
 import Table from "../components/Infra/Table";
 import Info from "../components/Home/Info";
 import Contact from "../components/cards/Contact";
+
+const data = [
+  { type: "Sealed Quench Furnace", capacity: "1000kg", units: 3 },
+  { type: "Sealed Quench Furnace", capacity: "1200kg", units: 2 },
+  { type: "Gas Nitriding Furnace", capacity: "600kg", units: 2 },
+  { type: "Gas Nitriding Furnace", capacity: "1200kg", units: 1 },
+  { type: "Sub Zero", capacity: "N/A", units: 4 },
+  { type: "Shot Blasting", capacity: "N/A", units: 4 },
+  { type: "Fully Equipped Metallurgy Lab", capacity: "N/A", units: 3 }
+];
+
 const Infra = () =>{
     return(
     <div className="flex flex-col items-center gap-2">
@@ -11,7 +22,8 @@ const Infra = () =>{
         <Navbar />
       </div>
       <Head img={"https://accuratebearing.in/wp-content/uploads/2023/01/heattreatment.jpg"} text={"Our Infrastructure"}/>
-     <Table/>
+     <Table data={data}/>
+     
      <Contact/>
      <Info/>
       <Footer/>

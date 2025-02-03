@@ -8,6 +8,7 @@ import Service from "./pages/Service"
 import Contact from "./pages/Contact"
 import Infra from "./pages/Infra"
 import Quality from "./pages/Quality"
+import { MetalLab } from "./pages/MetalLab"
 
 const PageTransition = () => {
   const location = useLocation();
@@ -18,7 +19,7 @@ const PageTransition = () => {
         <Route path="/about" element={<PageWrapper><About/></PageWrapper>}/>
         <Route path="/service" element={<PageWrapper><Service/></PageWrapper>}/>
         <Route path="/quality">
-        <Route path="/quality/metallurgy_lab" element={<PageWrapper><Quality/></PageWrapper>}/>
+        <Route path="/quality/metallurgy_lab" element={<PageWrapper><MetalLab/></PageWrapper>}/>
         <Route path="/quality/certificates" element={<PageWrapper><Quality/></PageWrapper>}/>
         <Route path="/quality/scada_&_qualitytools" element={<PageWrapper><Quality/></PageWrapper>}/>
         <Route path="/quality/quality_policy" element={<PageWrapper><Quality/></PageWrapper>}/>
