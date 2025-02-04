@@ -1,6 +1,6 @@
 export const Main = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-12 bg-gray-50 p-6 md:p-20">
+    <div className="flex flex-col justify-center items-center gap-12 bg-gray-50 p-6 md:p-20 my-20">
   <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 w-full">
     <div className="w-full md:w-1/3">
       <img

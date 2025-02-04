@@ -97,10 +97,34 @@ const Footer = () => {
           <div className="px-2">
             <h4 className="text-lg font-semibold text-white mb-4">Quality</h4>
             <ul className="space-y-2">
-              <li>Metallurgy Lab</li>
-              <li>Certificates</li>
-              <li>SCADA & Quality Tools</li>
-              <li>Quality Policy</li>
+              <Link
+                to={"/quality/metallurgy_lab"}
+                onClick={() => scrollToTop()}
+                className="cursor-pointer hover:text-blue-400"
+              >
+                <li>Metallurgy Lab</li>
+              </Link>
+              <Link
+                to={"/quality/certificates"}
+                onClick={() => scrollToTop()}
+                className="cursor-pointer hover:text-blue-400"
+              >
+                <li>Certificates</li>
+              </Link>
+              <Link
+                to={"/quality/scada_&_qualitytools"}
+                onClick={() => scrollToTop()}
+                className="cursor-pointer hover:text-blue-400"
+              >
+                <li>SCADA & Quality Tools</li>
+              </Link>
+              <Link
+                to={"/quality/quality_policy"}
+                onClick={() => scrollToTop()}
+                className="cursor-pointer hover:text-blue-400"
+              >
+                <li>Quality Policy</li>
+              </Link>
             </ul>
           </div>
         </div>

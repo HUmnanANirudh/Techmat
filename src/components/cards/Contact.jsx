@@ -9,7 +9,7 @@ const scrollToTop = (delay = 500) => {
 import img1 from "../../assets/4.webp";
 const Contact = () => {
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center my-20">
       <div className="relative w-full max-w-screen-lg">
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent z-10"></div>
         <img

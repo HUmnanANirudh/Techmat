@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import img1 from "../../assets/1.webp";
 import img2 from "../../assets/2.webp";
 import img3 from "../../assets/3.webp";
-import img4 from "../../assets/header.webp"
 const Hero = () => {
   const Scroll = (SectionId) => {
     const Section = document.getElementById(SectionId);
@@ -30,10 +29,6 @@ const Hero = () => {
       {
         id: 3,
         img: img3,
-      },
-      {
-        id:4,
-        img:img4,
       }
     ];
     const [currentIndex,setcurrentIndex] = useState(0);
