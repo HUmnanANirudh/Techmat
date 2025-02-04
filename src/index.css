@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -19,14 +19,14 @@ html{
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: #1e3a8a; 
+  color: #1e3a8a;
   position: relative;
   padding: 10px 15px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
-  color: black; 
+  color: black;
   background-color: #f0ffff;
   border-radius: 999px;
 }
@@ -36,9 +36,9 @@ html{
 }
 
 .nav-link:hover .chevron-icon {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 .nav-link.active-nav-link .chevron-icon {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }

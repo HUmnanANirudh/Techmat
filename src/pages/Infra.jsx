@@ -4,6 +4,8 @@ import Footer from "../components/Footer/footer";
 import Table from "../components/Infra/Table";
 import Info from "../components/Home/Info";
 import Contact from "../components/cards/Contact";
+import Facilities from "../components/Infra/Facilities";
+
 
 const data = [
   { type: "Sealed Quench Furnace", capacity: "1000kg", units: 3 },
@@ -23,7 +25,7 @@ const Infra = () =>{
       </div>
       <Head img={"https://accuratebearing.in/wp-content/uploads/2023/01/heattreatment.jpg"} text={"Our Infrastructure"}/>
      <Table data={data}/>
-     
+     <Facilities/>
      <Contact/>
      <Info/>
       <Footer/>
