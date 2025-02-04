@@ -6,7 +6,7 @@ const scrollToTop = (delay = 500) => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, delay);
 };
-import img1 from "../../assets/4.jpg";
+import img1 from "../../assets/4.webp";
 const Contact = () => {
   return (
     <div className="flex justify-center mt-10">
