@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Route } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
 import Dropdown from "../Dropdown/Dropdown";
 import MobileDropdown from "../Dropdown/MobileDropdown";
@@ -8,10 +8,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 
 const Qualityinfo = [
-  { id: 1, label: "Metallurgy Lab" },
-  { id: 2, label: "Certificates" },
-  { id: 3, label: "SCADA & Quality Tools" },
-  { id: 4, label: "Quality Policy" },
+  { id: 1, label: "Metallurgy Lab",route:"/quality/metallurgy_lab" },
+  { id: 2, label: "Certificates",route:"/quality/certificates" },
+  { id: 3, label: "SCADA & Quality Tools",route:"/quality/scada_&_qualitytools" },
+  { id: 4, label: "Quality Policy",route:"/quality/quality_policy" },
 ];
 
 const scrollToTop = (delay=500) => {
@@ -39,16 +39,22 @@ const Navbar = () => {
         />
       </div>
       <nav className="hidden sm:flex justify-center sm:gap-1 md:gap-2  sm:text-xs md:text-base lg:text-lg xl:text-xl items-center">
-        <NavLink to="/" className="nav-link" onClick={() => scrollToTop()}>
+        <NavLink to="/" className="nav-link" onClick={() => {
+                      scrollToTop()
+                    handleNav()}}>
           Home
         </NavLink>
-        <NavLink to="/about" className="nav-link" onClick={() => scrollToTop()}>
+        <NavLink to="/about" className="nav-link" onClick={() => {
+                      scrollToTop()
+                    handleNav()}}>
           About
         </NavLink>
         <NavLink
           to="/service"
           className="nav-link"
-          onClick={() => scrollToTop()}
+          onClick={() => {
+                      scrollToTop()
+                    handleNav()}}
         >
           Services
         </NavLink>
@@ -77,9 +83,9 @@ const Navbar = () => {
                 }}
                 className="absolute top-full left-0 bg-white text-black shadow-lg rounded-md p-4"
               >
-                <Link to={"/service"} onClick={scrollToTop}>
-                  <Dropdown items={Qualityinfo} onClick={() => scrollToTop()} />
-                </Link>
+                  <Dropdown items={Qualityinfo} onClick={() => {
+                      scrollToTop()
+                    handleNav()}} />
               </motion.div>
             )}
           </AnimatePresence>
@@ -87,14 +93,18 @@ const Navbar = () => {
         <NavLink
           to="/infrasturcture"
           className="nav-link"
-          onClick={() => scrollToTop()}
+          onClick={() => {
+                      scrollToTop()
+                    handleNav()}}
         >
           Infrastructure
         </NavLink>
         <NavLink
           to="/contact"
           className="nav-link"
-          onClick={() => scrollToTop()}
+          onClick={() => {
+                      scrollToTop()
+                    handleNav()}}
         >
           Contact
         </NavLink>
@@ -146,21 +156,27 @@ const Navbar = () => {
                   <NavLink
                     to="/"
                     className="nav-link"
-                    onClick={() => scrollToTop()}
+                    onClick={() => {
+                      scrollToTop()
+                    handleNav()}}
                   >
                     Home
                   </NavLink>
                   <NavLink
                     to="/about"
                     className="nav-link"
-                    onClick={() => scrollToTop()}
+                    onClick={() => {
+                      scrollToTop()
+                    handleNav()}}
                   >
                     About
                   </NavLink>
                   <NavLink
                     to="/service"
                     className="nav-link"
-                    onClick={() => scrollToTop()}
+                    onClick={() => {
+                      scrollToTop()
+                    handleNav()}}
                   >
                     Services
                   </NavLink>
@@ -168,7 +184,9 @@ const Navbar = () => {
                   <NavLink
                     to="/infrasturcture"
                     className="nav-link"
-                    onClick={() => scrollToTop()}
+                    onClick={() => {
+                      scrollToTop()
+                    handleNav()}}
                   >
                     Infrastructure
                   </NavLink>
@@ -208,12 +226,12 @@ const Navbar = () => {
                           }}
                           className=" text-black text-start rounded-md overflow-hidden"
                         >
-                          <Link to={"/service"}>
                             <MobileDropdown
                               items={Qualityinfo}
-                              onClick={() => scrollToTop()}
+                              onClick={() => {
+                                scrollToTop()
+                              handleNav()}}
                             />
-                          </Link>
                         </motion.div>
                       )}
                     </AnimatePresence>
@@ -221,7 +239,9 @@ const Navbar = () => {
                   <NavLink
                     to="/contact"
                     className="nav-link"
-                    onClick={() => scrollToTop()}
+                    onClick={() => {
+                      scrollToTop()
+                    handleNav()}}
                   >
                     Contact
                   </NavLink>

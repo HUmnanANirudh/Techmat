@@ -1,9 +1,10 @@
-const Dropdown = ({ items }) =>{
+import { Link } from "react-router-dom";
+const Dropdown = ({ items,onClick }) =>{
     return(
         <div className="bg-white rounded-xl">
             <ul className="flex flex-col list-none justify-start whitespace-nowrap cursor-pointer">
                 {items ? items.map(item => (
-                    <li key={ item.id } className="hover:bg-gray-50 hover:text-gray-900 p-0.5">{ item.label }</li>
+                    <Link key={ item.id } to={item.route} onClick={onClick} className="hover:bg-gray-50 hover:text-gray-900 p-0.5">{ item.label }</Link>
                 )):"null"}
             </ul>
         </div>

@@ -21,7 +21,7 @@ export const Main = () => {
   </div>
   <div className="flex flex-col md:flex-row justify-center items-center gap-6 w-full">
     <div className="flex flex-col justify-center items-center w-full md:w-1/3 text-justify">
-      <p className="text-base md:text-lg">
+      <p className="text-base md:text-lg text-justify px-4">
         Our dedicated QC labs have a qualified and well-trained team of metallurgists, whose expertise ensures that
         client requirements are met with utmost precision. Our labs have a 100% accuracy rate in a wide range of services
         ranging from inspecting the microstructure of components to analyzing mechanical properties.

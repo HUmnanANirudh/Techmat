@@ -16,7 +16,7 @@ const Timeline = () => {
     offset: ["start end", "end start"],
   });
 
-  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "107%"]);
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "105%"]);
 
   const milestones = [
     {
