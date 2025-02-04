@@ -12,7 +12,7 @@ const About = () =>{
       <div className="fixed top-0 left-0 w-screen z-50 bg-white">
         <Navbar />
       </div>
-      <Head img={"https://www.unithermfurnaces.com/frontend/assets/images/aboutusBanner.webp"} text={"About Us"}/>
+      <Head img={"https://www.dl.dropboxusercontent.com/scl/fi/hsf7nimxv8l5chd650okw/WhatsApp-Image-2025-01-31-at-18.05.42_cb091032.webp?rlkey=yn83ftmoc5pyiszvd99sm8dun&st=x6jknx15&dl=0"} text={"About Us"}/>
       <CompanyInfo/>
       <Mission/>
       <Timeline/>

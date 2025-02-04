@@ -16,14 +16,14 @@ const Info = () => {
             plantName="Unit II Bhiwadi"
             address="G 1/516 Industrial Area Phase I, Bhiwadi 301019, Rajasthan"
             phone="+91 9810421215"
-            email="gauravkalra@tttpl.in"
+            email="info@tttpl.in"
             className="lg:col-span-1"
           />
           <Address
             plantName="Unit III Khushkhera"
             address="G 1/938 Industrial Area Khushkhera 301707, Rajasthan"
             phone="+91 9772200675"
-            email="sailawadi@tttpl.in"
+            email="info@tttpl.in"
             className="lg:col-span-1 sm:col-span-2 order-last sm:order-none"
           />
         </div>
