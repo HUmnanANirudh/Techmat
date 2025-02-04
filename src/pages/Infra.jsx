@@ -9,9 +9,9 @@ const data = [
   { type: "Sealed Quench Furnace", capacity: "1000kg", units: 3 },
   { type: "Sealed Quench Furnace", capacity: "1200kg", units: 2 },
   { type: "Gas Nitriding Furnace", capacity: "600kg", units: 2 },
-  { type: "Gas Nitriding Furnace", capacity: "1200kg", units: 1 },
-  { type: "Sub Zero", capacity: "N/A", units: 4 },
-  { type: "Shot Blasting", capacity: "N/A", units: 4 },
+  { type: "Gas Carburizing Furnace", capacity: "600kg", units: 3 },
+  { type: "Shot Blasting - Tumblast", capacity: "N/A", units: 1 },
+  { type: "Shot Blasting - Table Type", capacity: "N/A", units: 1 },
   { type: "Fully Equipped Metallurgy Lab", capacity: "N/A", units: 3 }
 ];
 
