@@ -23,7 +23,7 @@ const Footer = () => {
               <span className="pt-1">
                 <MdOutlineLocationOn />
               </span>{" "}
-              G-1/571 Industrial Area Phase I, Bhiwadi 301019 Rajasthan)
+              G-1/571 Industrial Area Phase I, Bhiwadi 301019 Rajasthan
             </p>
             <p className="flex items-center gap-2">
               <span>
@@ -130,7 +130,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 border-t border-gray-700 pt-4 flex justify-center text-sm">
-          <p>© Copyright {year} www.techmatheattreaters.in</p>
+          <p>© Copyright {year} www.technothermaltreaters.in</p>
         </div>
       </div>
     </footer>
