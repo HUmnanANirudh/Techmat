@@ -184,30 +184,24 @@ const data = [
 ];
 export const Machinary = () => {
   return (
-    <div className="flex flex-col justify-center items-center space-y-4  md:p-20 my-10">
+    <div className="flex flex-col justify-center items-center space-y-4 md:px-16 md:my-10 ">
   <div className="flex flex-col justify-center items-center mx-auto p-6 md:px-8 space-y-4 max-w-4xl mb-4">
-    <h1 className="text-2xl md:text-3xl font-bold self-start text-center md:text-left">
+    <h1 className="text-2xl md:text-3xl font-bold self-center md:self-start text-center md:text-left">
       Hardness & Microstructure Analysis Equipment
     </h1>
-    <p className="text-base md:text-lg text-justify">
-      Precision is of the utmost importance to us. Our QC labs are equipped
-      with advanced tools to ensure the highest heat treatment quality
-      standards.
+    <p className="text-base md:text-lg text-justify ">
+      Precision is of the utmost importance to us. Our QC labs are equipped with advanced tools to ensure the highest heat treatment quality standards.
     </p>
     <p className="text-base md:text-lg text-justify">
-      We leave no room for compromise when it comes to assessing the hardness
-      and microstructure of components undergoing heat treatment. Our QC labs
-      are fully equipped with advanced and sophisticated equipment dedicated
-      to these critical measurements, ensuring that our heat treatment
-      processes meet the highest standards of precision and quality.
+      We leave no room for compromise when it comes to assessing the hardness and microstructure of components undergoing heat treatment. Our QC labs are fully equipped with advanced and sophisticated equipment dedicated to these critical measurements, ensuring that our heat treatment processes meet the highest standards of precision and quality.
     </p>
   </div>
-  <div className="flex justify-center items-center w-full">
-    <div className="overflow-x-auto w-full md:w-[80%] md:p-8 lg:p-10">
+  <div className="flex justify-center items-center w-full ">
+    <div className="w-[80%] flex justify-center">
       <table className="min-w-full table-auto border-collapse border text-start border-blue-300">
         <thead>
           <tr className="bg-gray-200">
-            <th className="border border-blue-300 px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
+            <th className="border whitespace-nowrap border-blue-300 px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
               Sr No
             </th>
             <th className="border border-blue-300 px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
@@ -223,17 +217,17 @@ export const Machinary = () => {
         </thead>
         <tbody>
           {data.map((item, index) => (
-            <tr key={index} className="bg-white even:bg-gray-100">
-              <td className="border border-blue-300 text-sm sm:text-base md:test-lg px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
+            <tr key={index} className="bg-white even:bg-gray-100 ">
+              <td className="border border-blue-300 self-center text-sm sm:text-base md:text-lg px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
                 {item.srNo}
               </td>
-              <td className="border border-blue-300 text-sm sm:text-base md:test-lg px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
+              <td className="border border-blue-300 text-sm sm:text-base md:text-lg px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
                 {item.equipment}
               </td>
-              <td className="border border-blue-300 text-sm sm:text-base md:test-lg px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
+              <td className="border border-blue-300 text-sm sm:text-base md:text-lg px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
                 {item.make}
               </td>
-              <td className="border border-blue-300 text-sm sm:text-base md:test-lg px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
+              <td className="border border-blue-300 text-sm sm:text-base md:text-lg px-2 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-4">
                 {item.usedFor}
               </td>
             </tr>
@@ -243,5 +237,6 @@ export const Machinary = () => {
     </div>
   </div>
 </div>
+
   );
 };

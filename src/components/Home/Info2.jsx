@@ -2,7 +2,7 @@ import Mail from "./Mail";
 
 const Info2 = () => {
   return (
-    <div className="flex justify-center items-center mb-10 sm:mb-40 md:mb-80">
+    <div className="flex justify-center items-center mb-10 sm:mb-40 md:mb-80 w-full">
       <div className="relative flex justify-center items-center w-full">
         <img
           src="https://www.unithermfurnaces.com/frontend/assets/images/solBg.webp"

@@ -1,12 +1,13 @@
+import Process from "../../assets/Process.webp"
 const Services = () => {
     return (
       <div className="flex flex-col justify-center items-center p-6">
         <div className="flex flex-col lg:flex-row justify-center items-center mb-10">
           <div className="flex justify-center items-center mb-6 lg:mb-0 lg:mr-10 p-2">
             <img
-              src="https://www.unithermfurnaces.com/frontend/assets/images/complete_solution.webp"
+              src={Process}
               alt="Complete Heat Treatment Solutions"
-              className="w-full max-w-[500px] h-auto object-cover border-2 border-blue-200"
+              className="w-full max-w-[500px] h-auto object-cover border-2 rounded-lg scale-95 border-blue-300 "
             />
           </div>
           <div className="max-w-xl text-start lg:text-left lg:mb-10">

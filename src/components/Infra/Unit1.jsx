@@ -17,7 +17,7 @@ export const Unit1 = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="overflow-x-auto mt-8 w-full p-4 md:p-0">
+        <div className=" mt-8 w-full md:p-0">
           <table className="min-w-full table-auto border-collapse border text-start border-blue-300">
             <thead>
               <tr className="bg-gray-200">
@@ -54,14 +54,14 @@ export const Unit1 = () => {
         <div className="flex flex-col justify-center items-center text-start space-y-2 p-4">
           <h1 className="text-2xl font-bold self-start">Plant Information</h1>
           <div className="w-16 border-b-4 border-blue-500 mb-4 self-start"></div>
-          <p className="text-base md:text-lg">
+          <p className="text-base md:text-lg text-justify">
             Our plant in Pune is one of the most prominent single-location
             commercial heat treatment facilities in Western India. Serving
             prominent OEMs and Tier 1 & Tier 2 companies in the automotive &
             non-automotive sectors near Pune, we set new quality benchmarks with
             unmatched heat treatment solutions.
           </p>
-          <p className="text-base md:text-lg">
+          <p className="text-base md:text-lg text-justify">
             As a trusted partner to the Automotive Industry, we understand the
             importance of reliability and efficiency. That's why our Pune
             facility ensures uninterrupted furnace operations with a dedicated

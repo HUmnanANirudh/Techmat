@@ -18,9 +18,9 @@ const Quality = () => {
         text={"Quality Policy"}
       />
       <div className="flex flex-col justify-center items-start space-y-6 p-6 md:p-20 my-10 max-w-7xl w-full">
-        <div className="flex flex-col md:flex-row justify-between items-center w-full space-y-10 md:space-y-0 md:space-x-10">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full md:gap-10 space-y-10 md:space-y-0 md:space-x-10">
           <div className="w-full md:w-1/2">
-            <h1 className="text-3xl md:text-4xl font-bold text-start mb-10">
+            <h1 className="text-3xl md:text-4xl font-bold text-start mb-6">
               Quality Policy
             </h1>
             <p className="text-base md:text-lg text-justify mt-4">
@@ -90,12 +90,12 @@ const Quality = () => {
           <img
             src={Quality1}
             alt="Quality"
-            className="w-48 sm:w-64 md:w-72  object-contain"
+            className="w-48 sm:w-64 md:w-72 object-contain"
           />
         </div>
       </div>
-      <Info />
-      <Footer />
+      <Info/>
+      <Footer/>
     </div>
   );
 };
