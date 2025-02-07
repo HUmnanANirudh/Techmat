@@ -1,10 +1,10 @@
 const Data = [
-    { type: "Sealed Quench Furnace", capacity: "1000kg", units: 3 },
-    { type: "Sealed Quench Furnace", capacity: "1200kg", units: 2 },
+    { type: "Sealed Quench Furnace", capacity: "1000kg", units: 2 },
+    // { type: "Sealed Quench Furnace", capacity: "1200kg", units: 2 },
     { type: "Gas Nitriding Furnace", capacity: "600kg", units: 2 },
     { type: "Gas Carburizing Furnace", capacity: "600kg", units: 3 },
     { type: "Shot Blasting - Tumblast", capacity: "N/A", units: 1 },
-    { type: "Shot Blasting - Table Type", capacity: "N/A", units: 1 }
+    { type: "Fully Equipped Metallurgy Lab", capacity: "N/A", units: 1 }
 ];
 export const Unit2 = () => {
   return (

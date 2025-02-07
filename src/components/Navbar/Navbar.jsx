@@ -33,9 +33,9 @@ const Navbar = () => {
     <div className="text-blue-300 flex justify-between p-2 border border-b-2 border-t-2 border-blue-300">
       <div className="flex justify-center items-center">
         <img
-          src="https://techmatheattreaters.in/images/logo.png"
+          src="https://www.dl.dropboxusercontent.com/scl/fi/zx3i6i60kel2snd9lstmt/Screenshot-2025-02-08-035023.png?rlkey=2ju04oksrzpd2cs3phh41rjrh&st=x8kvv271&dl=0"
           alt="Logo"
-          className="w-32 md:w-36 lg:w-44 xl:w-56"
+          className="w-32 md:w-36 lg:w-44 xl:w-56 h-16"
         />
       </div>
       <nav className="hidden sm:flex justify-center sm:gap-1 md:gap-2  sm:text-xs md:text-base lg:text-lg xl:text-xl items-center">
