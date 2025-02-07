@@ -12,7 +12,7 @@ const Service = () => {
       </div>
       <Head
         img={
-          "https://accuratebearing.in/wp-content/uploads/2023/01/heattreatment.jpg"
+          "https://www.dl.dropboxusercontent.com/scl/fi/bqmb6kec505pakp42pkj8/WhatsApp-Image-2025-02-04-at-20.36.35_d2ecb436.webp?rlkey=tpshcyaebf3rzvptufn6gfi54&st=jvgkav80&dl=0"
         }
         text={"Our Services"}
       />

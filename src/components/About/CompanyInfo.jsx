@@ -26,14 +26,14 @@ const CompanyInfo = () => {
       <div className="relative w-full flex justify-center items-start">
         <div className="w-72 sm:w-64 md:w-80 lg:w-96 h-72 mb-10">
           <img
-            src="https://www.unithermfurnaces.com/frontend/assets/images/about3.webp"
+            src="https://www.dl.dropboxusercontent.com/scl/fi/c9rnlylpxb8jgqq8ybneg/WhatsApp-Image-2025-02-04-at-11.55.41_7dacdf3c.jpg?rlkey=wafwsp8x1l72dtyw2salkhpva&st=3eyyq58z&dl=0"
             alt="Heat treatment equipment"
-            className="rounded-md shadow-2xl z-0 w-full h-auto"
+            className="rounded-md shadow-2xl z-0 w-full h-60"
           />
         </div>
         <div className="absolute bottom-0 left-5 sm:left-10 md:bottom-0 md:left-10 w-24 sm:w-32 md:w-40">
           <img
-            src="https://www.unithermfurnaces.com/frontend/assets/images/about4.webp"
+            src="https://www.dl.dropboxusercontent.com/scl/fi/l2qvc56lhusf5yt1p80zm/workers-wearing-uniforms-hardhat-factory-touching-with-legs-greeting-due-corona-virus-infection.jpg?rlkey=h5k2edpp8vvh31al1dx37ydyk&st=h21at01z&dl=0"
             alt="Engineers at work"
             className="shadow-lg w-full h-auto hidden md:block"
           />
