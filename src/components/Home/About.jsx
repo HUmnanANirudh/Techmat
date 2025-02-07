@@ -3,8 +3,7 @@ const HomeAbout = () => {
     <div className="flex flex-col md:flex-row justify-center md:gap-8 lg:px-12 items-center my-10 lg:mt-10 w-full">
       <div className="flex justify-center items-center w-full md:w-1/3">
         <img
-          src="https://www.unithermfurnaces.com/frontend/assets/images/30year.webp"
-          alt="30 Years of Experience"
+          src="https://www.dl.dropboxusercontent.com/scl/fi/yicp4iipnbts2mwg7mk0t/Flux_Dev_consider_the_above_image_i_am_currently_working_on_a__1-1.jpeg?rlkey=c01vtbasrbo96oqak6crjbwid&st=uwsqf2mf&dl=0"
           className="object-cover w-full p-4 h-64 sm:h-80 lg:h-96 max-w-[500px]" // Adjusted height class for large screens
         />
       </div>
