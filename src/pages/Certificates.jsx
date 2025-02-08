@@ -12,7 +12,7 @@ export const Certificates = () => {
       </div>
       <Head
         img={
-          "https://png.pngtree.com/png-clipart/20230527/original/pngtree-abstract-certificate-border-or-frame-png-image_9171867.png"
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbx1HuPlPdANtP0_bYIYtepHX4wA8urABww&s"
         }
         text={"Certifications"}
       />

@@ -4,7 +4,7 @@ const Head = ({img,text}) =>{
         <img
           src={img}
           loading="lazy"
-          className="w-full h-full mix-blend-overlay object-fill"
+          className="w-full h-full mix-blend-overlay object-cover"
           alt="Header Background"
         />
         <div className="absolute text-center z-20 font-bold top-1/2 -translate-y-1/2">
