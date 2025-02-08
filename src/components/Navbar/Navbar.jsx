@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink} from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
 import Dropdown from "../Dropdown/Dropdown";
 import MobileDropdown from "../Dropdown/MobileDropdown";
@@ -37,7 +37,8 @@ const Navbar = () => {
     SetDrop(!Drop);
   };
   return (
-    <div className="text-blue-300 flex justify-between items-center p-2 border border-b-2 border-t-2 border-blue-300 ">
+    <div className="text-blue-300 flex justify-between items-center p-2 border border-b-2 border-t-2 border-purple-100 ">
+      <Link to={"/"}>
       <div className="flex justify-center items-center">
         <img
           src={Logo}
@@ -45,6 +46,7 @@ const Navbar = () => {
           className="w-full px-2 md:full h-12 object-contain mx-auto"
         />
       </div>
+      </Link>
       <nav className="hidden sm:flex justify-center sm:gap-1 md:gap-2  sm:text-xs md:text-base lg:text-lg xl:text-xl items-center">
         <NavLink
           to="/"
@@ -133,7 +135,7 @@ const Navbar = () => {
           Contact
         </NavLink>
       </nav>
-      <div className="sm:hidden pt-1 mr-1">
+      <div className="sm:hidden pt-1 mr-1 text-purple-400">
         <GiHamburgerMenu
           className="text-2xl text-center cursor-pointer"
           onClick={handleNav}
@@ -162,13 +164,19 @@ const Navbar = () => {
             >
               <div className="flex flex-col">
                 <div className="flex justify-between items-center p-1.5">
+                  <Link to={"/"}>
                   <div className="flex justify-center items-center">
                     <img
                       src={Logo}
                       alt="Logo"
                       className="w-full px-2 h-12 object-contain"
+                      onClick={() => {
+                        scrollToTop();
+                        handleNav();
+                      }}
                     />
                   </div>
+                  </Link>
                   <div className=" pt-2">
                     <IoCloseSharp
                       className="text-3xl cursor-pointer"

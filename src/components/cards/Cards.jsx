@@ -1,15 +1,15 @@
 const Card1 = ({ img, text }) => {
   return (
-    <div className="relative group overflow-hidden cursor-pointer w-full sm:w-80 md:w-96 mx-auto border-2 border-blue-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-w-[500px]">
+    <div className="relative group overflow-hidden cursor-pointer mx-auto border-2 border-purple-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/10 z-10"></div>
       <img
         src={img}
         loading="lazy"
         alt="Heat Treatment Solutions"
-        className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+        className="w-52 h-full sm:w-56 md:w-64 lg:w-72 object-cover transition-transform duration-500 group-hover:scale-110"
       />
-      <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 md:p-6 lg:p-8 z-20">
-        <h1 className="text-white text-base sm:text-lg md:text-xl lg:text-2xl text-start font-bold mb-2 sm:mb-3">
+      <div className="absolute bottom-0 p-4 z-20">
+        <h1 className="text-white text-sm sm:text-base md:text-lg lg:text-xl text-start font-bold uppercase">
           {text}
         </h1>
       </div>

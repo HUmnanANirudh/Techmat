@@ -8,7 +8,7 @@ const Hero = () => {
   const Scroll = (SectionId) => {
     const Section = document.getElementById(SectionId);
     if (SectionId) {
-      Section.scrollIntoView({ behavior: "smooth", block: "start" });
+      Section.scrollIntoView({ behavior: "smooth", block:"nearest" });
     }
   };
   const headingLine1 = "Innovating Metal Solutions for".split(" ");

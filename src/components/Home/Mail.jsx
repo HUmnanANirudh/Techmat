@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { motion } from "motion/react";
 const Mail = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -21,10 +21,23 @@ const Mail = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     alert("Request submitted!");
+    setFormData({
+      name: "",
+      email: "",
+      mobile: "",
+      subject: "",
+      comments: "",
+    });
   };
 
   return (
-    <div className="container mx-auto p-12 sm:p-6 bg-gray-100 rounded-lg w-full md:w-[700px] shadow-xl mt-10">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      className="container mx-auto p-12 sm:p-6 bg-gray-100 rounded-lg w-full md:w-[700px] shadow-xl mt-10"
+    >
       <h3 className="text-3xl font-bold mb-6 text-center">Request A Quote</h3>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row justify-center items-center sm:gap-4">
@@ -86,7 +99,7 @@ const Mail = () => {
           className="w-full bg-blue-600 text-white p-3 font-bold rounded cursor-pointer hover:bg-blue-700"
         />
       </form>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,8 +1,10 @@
 import Address from "./Address"; 
-
+import {motion} from "motion/react"
 const Info = () => {
   return (
-    <div className="bg-white flex justify-center items-center mb-20 px-4 sm:px-8 md:px-16 lg:px-20">
+    <motion.div initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.3, delay: 0.1 }} className="bg-white flex justify-center items-center mb-20 px-4 sm:px-8 md:px-16 lg:px-20">
       <div className="border-2 border-blue-300 w-full sm:w-[500px] md:w-[700px] lg:w-[900px] flex justify-between items-center p-4 sm:p-6 md:p-8 lg:p-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
           <Address
@@ -28,7 +30,7 @@ const Info = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

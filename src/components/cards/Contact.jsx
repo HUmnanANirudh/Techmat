@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Button2 from "../button/Button2";
 import { memo } from "react";
+import { motion } from "motion/react";
 const scrollToTop = (delay = 500) => {
   setTimeout(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -9,7 +10,12 @@ const scrollToTop = (delay = 500) => {
 import img1 from "../../assets/4.webp";
 const Contact = () => {
   return (
-    <div className="flex justify-center my-20">
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
+      className="flex justify-center my-20"
+    >
       <div className="relative w-full max-w-screen-lg">
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent z-10"></div>
         <img
@@ -28,7 +34,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
