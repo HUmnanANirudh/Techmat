@@ -4,6 +4,7 @@ import Info from "../components/Home/Info";
 import Map from "../components/Maps/Map";
 import Navbar from "../components/Navbar/Navbar";
 import { memo } from "react";
+import Img14 from "../assets/14.webp";
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
       <div className="fixed top-0 left-0 w-screen z-50 bg-white">
         <Navbar />
       </div>
-      <Head img={"https://www.unithermfurnaces.com/frontend/assets/images/contactBanner.webp"} text={"Contacts"}/>
+      <Head img={Img14} text={"Contacts"}/>
       <Map/>
       <Info/>
       <Footer/>

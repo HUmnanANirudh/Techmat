@@ -4,6 +4,8 @@ import Services from "../components/Extra/Services";
 import Contact from "../components/cards/Contact";
 import Footer from "../components/Footer/footer";
 import Info from "../components/Home/Info";
+
+import Img9 from "../assets/9.webp";
 const Service = () => {
   return (
     <div className="flex flex-col items-center gap-2">
@@ -11,9 +13,7 @@ const Service = () => {
         <Navbar />
       </div>
       <Head
-        img={
-          "https://www.dl.dropboxusercontent.com/scl/fi/bqmb6kec505pakp42pkj8/WhatsApp-Image-2025-02-04-at-20.36.35_d2ecb436.webp?rlkey=tpshcyaebf3rzvptufn6gfi54&st=jvgkav80&dl=0"
-        }
+        img={Img9}
         text={"Our Services"}
       />
       <Services />

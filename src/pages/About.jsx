@@ -5,6 +5,7 @@ import Footer from "../components/Footer/footer";
 import Head from "../components/Hero/Head";
 import Info from "../components/Home/Info";
 import Navbar from "../components/Navbar/Navbar";
+import Img11 from "../assets/11.webp";
 
 const About = () =>{
     return(
@@ -12,7 +13,7 @@ const About = () =>{
       <div className="fixed top-0 left-0 w-screen z-50 bg-white">
         <Navbar />
       </div>
-      <Head img={"https://www.dl.dropboxusercontent.com/scl/fi/hsf7nimxv8l5chd650okw/WhatsApp-Image-2025-01-31-at-18.05.42_cb091032.webp?rlkey=yn83ftmoc5pyiszvd99sm8dun&st=x6jknx15&dl=0"} text={"About Us"}/>
+      <Head img={Img11} text={"About Us"}/>
       <CompanyInfo/>
       <Mission/>
       <Timeline/>

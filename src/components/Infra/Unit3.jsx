@@ -1,3 +1,4 @@
+import Img20 from "../../assets/20.webp";
 const Data = [
     // { type: "Sealed Quench Furnace", capacity: "1000kg", units: 3 },
     { type: "Sealed Quench Furnace", capacity: "1200kg", units: 2 },
@@ -13,7 +14,7 @@ export const Unit3 = () => {
       <div className="flex flex-col justify-center items-center w-full md:w-2/3">
         <div className="w-full ">
           <img
-            src="https://www.unithermfurnaces.com/frontend/assets/images/Chakan-Plant13.webp"
+            src={Img20}
             alt="Plant images"
             className="w-full h-full object-cover"
           />
@@ -56,19 +57,10 @@ export const Unit3 = () => {
           <h1 className="text-2xl font-bold self-start">Plant Information</h1>
           <div className="w-16 border-b-4 border-blue-500 mb-4 self-start"></div>
           <p className="text-base md:text-lg text-justify">
-            Our plant in Pune is one of the most prominent single-location
-            commercial heat treatment facilities in Western India. Serving
-            prominent OEMs and Tier 1 & Tier 2 companies in the automotive &
-            non-automotive sectors near Pune, we set new quality benchmarks with
-            unmatched heat treatment solutions.
+          Our Khushkhera facility is a cutting-edge commercial heat treatment plant, catering to OEMs and Tier 1 & Tier 2 companies across automotive and non-automotive industries. With a focus on precision and quality, we offer advanced heat treatment solutions that adhere to the highest industry standards. Our fully equipped Metallurgy Lab ensures stringent quality control, delivering consistent and reliable results for every component we process.
           </p>
           <p className="text-base md:text-lg text-justify">
-            As a trusted partner to the Automotive Industry, we understand the
-            importance of reliability and efficiency. That's why our Pune
-            facility ensures uninterrupted furnace operations with a dedicated
-            Express Feeder backed by 100% DG sets. This setup guarantees
-            continuous operations, enabling on-time service delivery and
-            upholding our commitment to excellence.
+          The facility is equipped with two 1200kg Sealed Quench Furnaces and a Table-Type Shot Blasting unit, enabling efficient and high-quality treatment processes. Designed for seamless operations, our Khushkhera unit ensures uninterrupted production and timely service delivery, reinforcing our commitment to excellence in heat treatment solutions.
           </p>
         </div>
         <div className="flex justify-center w-full h-64 md:h-80 p-4">

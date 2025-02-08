@@ -1,4 +1,5 @@
 import Process from "../../assets/Process.webp"
+import servicesbg from "../../assets/9.webp"
 const Services = () => {
     return (
       <div className="flex flex-col justify-center items-center p-6">

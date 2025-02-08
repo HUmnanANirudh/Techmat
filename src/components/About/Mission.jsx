@@ -1,4 +1,7 @@
 import {motion} from "motion/react"
+import Img5 from "../../assets/5.webp";
+import Img6 from "../../assets/6.webp";
+import Img8 from "../../assets/8.webp";
 const Mission = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 bg-white w-full px-4 sm:px-10 md:px-16 lg:px-28 gap-x-8 gap-y-12 mb-16 md:my-20 p-4">
@@ -48,7 +51,7 @@ const Mission = () => {
       </motion.div>
       <div className="relative flex flex-col sm:flex-col md:flex-row justify-center items-start gap-8">
         <motion.img
-          src="https://www.dl.dropboxusercontent.com/scl/fi/svc0kp14f011qieq6tzcg/co-working-people-working-together.jpg?rlkey=mfq61or79ql8e51kmoy9vi6de&st=lhj8ugp3&dl=0"
+          src={Img6}
           className="w-full p-8 sm:p-0 md:h-72 lg:h-80 object-cover rounded-md md:shadow-2xl sm:border-2 sm:border-blue-200"
           alt="Mission Image"
           initial={{ opacity: 0, scale: 0.9 }} 
@@ -65,7 +68,7 @@ const Mission = () => {
           transition={{ delay: 0.7, duration: 0.7 }}
         >
           <motion.img
-            src="https://www.dl.dropboxusercontent.com/scl/fi/05wgkww7yfn5xwp6znxe4/business-team-three-watching-presentation-pc-monitor-discussing-project-sitting-workplace-pointing-display-copy-space-business-meeting-concept.jpg?rlkey=ri730vklu9c0t88gwwzjte63g&st=962lffww&dl=0"
+            src={Img5}
             className="hidden md:block w-full h-64 object-cover rounded-md shadow-2xl border-2 border-blue-200"
             alt="Vision Image"
             whileHover={{ scale: 1.05 }}
