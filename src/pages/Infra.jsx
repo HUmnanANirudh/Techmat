@@ -5,6 +5,7 @@ import Table from "../components/Infra/Table";
 import Info from "../components/Home/Info";
 import Contact from "../components/cards/Contact";
 import Facilities from "../components/Infra/Facilities";
+import Img19 from "../assets/19.webp";
 
 
 const data = [
@@ -23,7 +24,7 @@ const Infra = () =>{
       <div className="fixed top-0 left-0 w-screen z-50 bg-white">
         <Navbar />
       </div>
-      <Head img={"https://accuratebearing.in/wp-content/uploads/2023/01/heattreatment.jpg"} text={"Our Infrastructure"}/>
+      <Head img={Img19} text={"Our Infrastructure"}/>
      <Table data={data}/>
      <Facilities/>
      <Contact/>

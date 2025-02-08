@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Img8 from "../../assets/8.webp";
 const CompanyInfo = () => {
   return (
   <div className="bg-white flex flex-col md:flex-row justify-between items-center w-full gap-12 py-12 px-6 md:py-20 md:px-12 my-20">
@@ -31,7 +32,7 @@ const CompanyInfo = () => {
   transition={{duration:1,ease:"easeInOut"}} className="w-full md:w-1/2 flex justify-center">
     <div className="w-80 md:w-96 lg:w-full h-auto">
       <img
-        src="https://www.dl.dropboxusercontent.com/scl/fi/c9rnlylpxb8jgqq8ybneg/WhatsApp-Image-2025-02-04-at-11.55.41_7dacdf3c.jpg?rlkey=wafwsp8x1l72dtyw2salkhpva&st=3eyyq58z&dl=0"
+        src={Img8}
         alt="Heat treatment equipment"
         className="rounded-lg shadow-xl w-full h-auto object-cover"
       />
