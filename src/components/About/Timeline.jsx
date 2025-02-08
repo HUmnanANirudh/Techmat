@@ -102,7 +102,7 @@ const Timeline = () => {
                 <div className="w-4 h-4 bg-blue-500 rounded-full border-4 border-white" />
               </motion.div>
               <motion.div
-                className="absolute top-2 left-4 md:left-1/2 h-0.5 bg-blue-300 w-8"
+                className="md:hidden absolute top-2 left-4 md:left-1/2 h-0.5 bg-blue-300 w-8"
                 initial={{ width: 0 }}
                 whileInView={{ width: "2rem" }}
                 transition={{ duration: 0.3, delay: 0.3 }}
@@ -111,7 +111,7 @@ const Timeline = () => {
                 }}
               />
               <motion.div
-                className="ml-16 md:ml-0 md:flex md:flex-row md:items-start"
+                className="ml-16 md:ml-0 md:flex md:flex-row md:items-start "
                 initial={{
                   opacity: 0,
                   x: -50,

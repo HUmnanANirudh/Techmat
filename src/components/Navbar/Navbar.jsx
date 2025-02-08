@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink, Route } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
 import Dropdown from "../Dropdown/Dropdown";
 import MobileDropdown from "../Dropdown/MobileDropdown";
@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 
+import Logo from "../../assets/Logo.webp"
 const Qualityinfo = [
   { id: 1, label: "Metallurgy Lab", route: "/quality/metallurgy_lab" },
   { id: 2, label: "Certificates", route: "/quality/certificates" },
@@ -39,7 +40,7 @@ const Navbar = () => {
     <div className="text-blue-300 flex justify-between items-center p-2 border border-b-2 border-t-2 border-blue-300 ">
       <div className="flex justify-center items-center">
         <img
-          src="https://www.dl.dropboxusercontent.com/scl/fi/zx3i6i60kel2snd9lstmt/Screenshot-2025-02-08-035023.png?rlkey=2ju04oksrzpd2cs3phh41rjrh&st=x8kvv271&dl=0"
+          src={Logo}
           alt="Logo"
           className="w-full px-2 md:full h-12 object-contain mx-auto"
         />
@@ -163,7 +164,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center p-1.5">
                   <div className="flex justify-center items-center">
                     <img
-                      src="https://www.dl.dropboxusercontent.com/scl/fi/zx3i6i60kel2snd9lstmt/Screenshot-2025-02-08-035023.png?rlkey=2ju04oksrzpd2cs3phh41rjrh&st=x8kvv271&dl=0"
+                      src={Logo}
                       alt="Logo"
                       className="w-full px-2 h-12 object-contain"
                     />
