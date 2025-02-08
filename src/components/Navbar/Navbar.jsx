@@ -8,14 +8,20 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 
 const Qualityinfo = [
-  { id: 1, label: "Metallurgy Lab",route:"/quality/metallurgy_lab" },
-  { id: 2, label: "Certificates",route:"/quality/certificates" },
-  { id: 3, label: "SCADA & Quality Tools",route:"/quality/scada_&_qualitytools" },
-  { id: 4, label: "Quality Policy",route:"/quality/quality_policy" },
+  { id: 1, label: "Metallurgy Lab", route: "/quality/metallurgy_lab" },
+  { id: 2, label: "Certificates", route: "/quality/certificates" },
+  {
+    id: 3,
+    label: "SCADA & Quality Tools",
+    route: "/quality/scada_&_qualitytools",
+  },
+  { id: 4, label: "Quality Policy", route: "/quality/quality_policy" },
 ];
 
-const scrollToTop = (delay=500) => {
-  setTimeout(()=>{window.scrollTo({ top: 0, left: 0, behavior: "smooth" })},delay);
+const scrollToTop = (delay = 500) => {
+  setTimeout(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, delay);
 };
 
 const Navbar = () => {
@@ -30,31 +36,42 @@ const Navbar = () => {
     SetDrop(!Drop);
   };
   return (
-    <div className="text-blue-300 flex justify-between p-2 border border-b-2 border-t-2 border-blue-300">
+    <div className="text-blue-300 flex justify-between items-center p-2 border border-b-2 border-t-2 border-blue-300 ">
       <div className="flex justify-center items-center">
         <img
           src="https://www.dl.dropboxusercontent.com/scl/fi/zx3i6i60kel2snd9lstmt/Screenshot-2025-02-08-035023.png?rlkey=2ju04oksrzpd2cs3phh41rjrh&st=x8kvv271&dl=0"
           alt="Logo"
-          className="w-32 md:w-36 lg:w-44 xl:w-56 h-16"
+          className="w-full px-2 md:full h-12 object-contain mx-auto"
         />
       </div>
       <nav className="hidden sm:flex justify-center sm:gap-1 md:gap-2  sm:text-xs md:text-base lg:text-lg xl:text-xl items-center">
-        <NavLink to="/" className="nav-link" onClick={() => {
-                      scrollToTop()
-                    handleNav()}}>
+        <NavLink
+          to="/"
+          className="nav-link"
+          onClick={() => {
+            scrollToTop();
+            handleNav();
+          }}
+        >
           Home
         </NavLink>
-        <NavLink to="/about" className="nav-link" onClick={() => {
-                      scrollToTop()
-                    handleNav()}}>
+        <NavLink
+          to="/about"
+          className="nav-link"
+          onClick={() => {
+            scrollToTop();
+            handleNav();
+          }}
+        >
           About
         </NavLink>
         <NavLink
           to="/service"
           className="nav-link"
           onClick={() => {
-                      scrollToTop()
-                    handleNav()}}
+            scrollToTop();
+            handleNav();
+          }}
         >
           Services
         </NavLink>
@@ -83,9 +100,13 @@ const Navbar = () => {
                 }}
                 className="absolute top-full left-0 bg-white text-black shadow-lg rounded-md p-4"
               >
-                  <Dropdown items={Qualityinfo} onClick={() => {
-                      scrollToTop()
-                    handleNav()}} />
+                <Dropdown
+                  items={Qualityinfo}
+                  onClick={() => {
+                    scrollToTop();
+                    handleNav();
+                  }}
+                />
               </motion.div>
             )}
           </AnimatePresence>
@@ -94,8 +115,9 @@ const Navbar = () => {
           to="/infrasturcture"
           className="nav-link"
           onClick={() => {
-                      scrollToTop()
-                    handleNav()}}
+            scrollToTop();
+            handleNav();
+          }}
         >
           Infrastructure
         </NavLink>
@@ -103,8 +125,9 @@ const Navbar = () => {
           to="/contact"
           className="nav-link"
           onClick={() => {
-                      scrollToTop()
-                    handleNav()}}
+            scrollToTop();
+            handleNav();
+          }}
         >
           Contact
         </NavLink>
@@ -137,12 +160,12 @@ const Navbar = () => {
               className="fixed sm:hidden top-0 left-0 w-screen h-screen bg-gray-50 "
             >
               <div className="flex flex-col">
-                <div className="flex justify-between p-1.5">
+                <div className="flex justify-between items-center p-1.5">
                   <div className="flex justify-center items-center">
                     <img
-                      src="https://techmatheattreaters.in/images/logo.png"
+                      src="https://www.dl.dropboxusercontent.com/scl/fi/zx3i6i60kel2snd9lstmt/Screenshot-2025-02-08-035023.png?rlkey=2ju04oksrzpd2cs3phh41rjrh&st=x8kvv271&dl=0"
                       alt="Logo"
-                      className="w-32"
+                      className="w-full px-2 h-12 object-contain"
                     />
                   </div>
                   <div className=" pt-2">
@@ -157,8 +180,9 @@ const Navbar = () => {
                     to="/"
                     className="nav-link"
                     onClick={() => {
-                      scrollToTop()
-                    handleNav()}}
+                      scrollToTop();
+                      handleNav();
+                    }}
                   >
                     Home
                   </NavLink>
@@ -166,8 +190,9 @@ const Navbar = () => {
                     to="/about"
                     className="nav-link"
                     onClick={() => {
-                      scrollToTop()
-                    handleNav()}}
+                      scrollToTop();
+                      handleNav();
+                    }}
                   >
                     About
                   </NavLink>
@@ -175,8 +200,9 @@ const Navbar = () => {
                     to="/service"
                     className="nav-link"
                     onClick={() => {
-                      scrollToTop()
-                    handleNav()}}
+                      scrollToTop();
+                      handleNav();
+                    }}
                   >
                     Services
                   </NavLink>
@@ -185,8 +211,9 @@ const Navbar = () => {
                     to="/infrasturcture"
                     className="nav-link"
                     onClick={() => {
-                      scrollToTop()
-                    handleNav()}}
+                      scrollToTop();
+                      handleNav();
+                    }}
                   >
                     Infrastructure
                   </NavLink>
@@ -226,12 +253,13 @@ const Navbar = () => {
                           }}
                           className=" text-black text-start rounded-md overflow-hidden"
                         >
-                            <MobileDropdown
-                              items={Qualityinfo}
-                              onClick={() => {
-                                scrollToTop()
-                              handleNav()}}
-                            />
+                          <MobileDropdown
+                            items={Qualityinfo}
+                            onClick={() => {
+                              scrollToTop();
+                              handleNav();
+                            }}
+                          />
                         </motion.div>
                       )}
                     </AnimatePresence>
@@ -240,8 +268,9 @@ const Navbar = () => {
                     to="/contact"
                     className="nav-link"
                     onClick={() => {
-                      scrollToTop()
-                    handleNav()}}
+                      scrollToTop();
+                      handleNav();
+                    }}
                   >
                     Contact
                   </NavLink>

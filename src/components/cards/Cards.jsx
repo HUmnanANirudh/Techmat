@@ -1,6 +1,6 @@
 const Card1 = ({ img, text }) => {
   return (
-    <div className="relative group overflow-hidden cursor-pointer w-2/3 sm:w-80 md:w-96 mx-auto border-2 border-blue-200 rounded-lg">
+    <div className="relative group overflow-hidden cursor-pointer w-full sm:w-80 md:w-96 mx-auto border-2 border-blue-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-w-[500px]">
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/10 z-10"></div>
       <img
         src={img}
@@ -16,4 +16,5 @@ const Card1 = ({ img, text }) => {
     </div>
   );
 };
+
 export default Card1;
