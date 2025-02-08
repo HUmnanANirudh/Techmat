@@ -5,6 +5,7 @@ const Mission = () => {
       <motion.div 
         initial={{ opacity: 0, y: 50 }} 
         whileInView={{ opacity: 1, y: 0 }} 
+        viewport={{once:true}}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex flex-col justify-center px-4 md:px-0"
       >
@@ -18,6 +19,7 @@ const Mission = () => {
           className="text-gray-600 text-base md:text-lg lg:text-xl mb-8 text-justify"
           initial={{ opacity: 0, y: 20 }} 
           whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{once:true}}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           To be a successful customer-oriented company globally by meeting or exceeding 
@@ -35,6 +37,7 @@ const Mission = () => {
           className="list-disc list-inside text-gray-600 space-y-2 text-base md:text-lg lg:text-xl text-justify"
           initial={{ opacity: 0, y: 20 }} 
           whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{once:true}}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
           <li>Become World Class and Reliable Heat Treatment solutions provider.</li>
@@ -50,6 +53,7 @@ const Mission = () => {
           alt="Mission Image"
           initial={{ opacity: 0, scale: 0.9 }} 
           whileInView={{ opacity: 1, scale: 1 }} 
+          viewport={{once:true}}
           transition={{ delay: 0.5, duration: 0.7 }}
           whileHover={{ scale: 1.05 }}
         />
@@ -57,6 +61,7 @@ const Mission = () => {
           className="md:absolute lg:bottom-0 md:bottom-0 lg:right-0 lg:transform lg:translate-y-1/2"
           initial={{ opacity: 0, x: 50 }} 
           whileInView={{ opacity: 1, x: 0 }} 
+          viewport={{once:true}}
           transition={{ delay: 0.7, duration: 0.7 }}
         >
           <motion.img
