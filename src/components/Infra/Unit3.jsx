@@ -1,12 +1,12 @@
 import Img20 from "../../assets/20.webp";
 const Data = [
-    // { type: "Sealed Quench Furnace", capacity: "1000kg", units: 3 },
-    { type: "Sealed Quench Furnace", capacity: "1200kg", units: 2 },
-    // { type: "Gas Nitriding Furnace", capacity: "600kg", units: 2 },
-    // { type: "Gas Carburizing Furnace", capacity: "600kg", units: 3 },
-    // { type: "Shot Blasting - Tumblast", capacity: "N/A", units: 1 },
-    { type: "Shot Blasting - Table Type", capacity: "N/A", units: 1 },
-    { type: "Fully Equipped Metallurgy Lab", capacity: "N/A", units: 1}
+  // { type: "Sealed Quench Furnace", capacity: "1000kg", units: 3 },
+  { type: "Sealed Quench Furnace", capacity: "1200kg", units: 2 },
+  // { type: "Gas Nitriding Furnace", capacity: "600kg", units: 2 },
+  // { type: "Gas Carburizing Furnace", capacity: "600kg", units: 3 },
+  // { type: "Shot Blasting - Tumblast", capacity: "N/A", units: 1 },
+  { type: "Shot Blasting - Table Type", capacity: "N/A", units: 1 },
+  { type: "Fully Equipped Metallurgy Lab", capacity: "N/A", units: 1 },
 ];
 export const Unit3 = () => {
   return (
@@ -57,15 +57,26 @@ export const Unit3 = () => {
           <h1 className="text-2xl font-bold self-start">Plant Information</h1>
           <div className="w-16 border-b-4 border-blue-500 mb-4 self-start"></div>
           <p className="text-base md:text-lg text-justify">
-          Our Khushkhera facility is a cutting-edge commercial heat treatment plant, catering to OEMs and Tier 1 & Tier 2 companies across automotive and non-automotive industries. With a focus on precision and quality, we offer advanced heat treatment solutions that adhere to the highest industry standards. Our fully equipped Metallurgy Lab ensures stringent quality control, delivering consistent and reliable results for every component we process.
+            Our Khushkhera facility is a cutting-edge commercial heat treatment
+            plant, catering to OEMs and Tier 1 & Tier 2 companies across
+            automotive and non-automotive industries. With a focus on precision
+            and quality, we offer advanced heat treatment solutions that adhere
+            to the highest industry standards. Our fully equipped Metallurgy Lab
+            ensures stringent quality control, delivering consistent and
+            reliable results for every component we process.
           </p>
           <p className="text-base md:text-lg text-justify">
-          The facility is equipped with two 1200kg Sealed Quench Furnaces and a Table-Type Shot Blasting unit, enabling efficient and high-quality treatment processes. Designed for seamless operations, our Khushkhera unit ensures uninterrupted production and timely service delivery, reinforcing our commitment to excellence in heat treatment solutions.
+            The facility is equipped with two 1200kg Sealed Quench Furnaces and
+            a Table-Type Shot Blasting unit, enabling efficient and high-quality
+            treatment processes. Designed for seamless operations, our
+            Khushkhera unit ensures uninterrupted production and timely service
+            delivery, reinforcing our commitment to excellence in heat treatment
+            solutions.
           </p>
         </div>
         <div className="flex justify-center w-full h-64 md:h-80 p-4">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21426.093612823006!2d76.8302367!3d28.2049761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3790de59396b%3A0x97154e5698fa6081!2sTechno%20Thermal%20Treaters%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1738365054664!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3182.2150858402956!2d76.78407699479574!3d28.113394807767957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA2JzQ3LjMiTiA3NsKwNDcnMDUuOCJF!5e1!3m2!1sen!2sin!4v1738365162310!5m2!1sen!2sin"
             title="Google Map location of TECHMAT Enterprises"
             width="100%"
             height="100%"
