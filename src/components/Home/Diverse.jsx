@@ -1,5 +1,6 @@
 import Card1 from "../cards/Cards";
 import { motion } from "motion/react";
+import Img19 from "../../assets/19.webp";
 import Img17 from "../../assets/17.webp";
 import Img21 from "../../assets/21.webp";
 import Img22 from "../../assets/22.webp";
@@ -60,7 +61,7 @@ const Diverse = () => {
           </motion.div>
           <motion.div variants={cardVariants}>
             <Card1
-              img={Img21}
+              img={Img19}
               text={"Carburizing"}
             />
           </motion.div>
@@ -70,16 +71,16 @@ const Diverse = () => {
               text={"Carbonitriding"}
             />
           </motion.div>
-          <motion.div variants={cardVariants}>
+          {/* <motion.div variants={cardVariants}>
             <Card1
               img={Img24}
               text={"Gas Nitriding / Ox-Nitriding"}
             />
-          </motion.div>
+          </motion.div> */}
           <motion.div variants={cardVariants}>
             <Card1
               img={Img25}
-              text={"Gas Nitrocarburizing / Ox-Nitriding"}
+              text={"GAS NITRIDING/ GAS NITROCARBURIZING/ OX- NITRIDING / OX- NITROCARBURIZING"}
             />
           </motion.div>
         </motion.div>
