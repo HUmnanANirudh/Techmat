@@ -2,6 +2,7 @@ import Footer from "../components/Footer/footer";
 import Head from "../components/Hero/Head";
 import Info from "../components/Home/Info";
 import Navbar from "../components/Navbar/Navbar";
+import Img26 from "../assets/26.webp";
 export const ScadaQualityTools = () => {
   return (
     <div className="flex flex-col items-center">
@@ -9,9 +10,7 @@ export const ScadaQualityTools = () => {
         <Navbar />
       </div>
       <Head
-        img={
-          "https://www.gkexpertise.com/wp-content/uploads/2024/02/scada-systems.jpg"
-        }
+        img={Img26}
         text={"SCADA System"}
       />
       <div className="flex flex-col justify-center items-start space-y-4 p-6 md:p-20">
@@ -30,11 +29,11 @@ export const ScadaQualityTools = () => {
       use this software to keep furnace processing parameters within the desired
       limits.
     </p>
-    <p className="text-sm sm:text-base md:text-lg text-justify">
+    {/* <p className="text-sm sm:text-base md:text-lg text-justify">
       Apart from legacy controllers Yokogawa, Eurotherm, and Siemens, most of
       our facilities have started using automatic visual controllers from Stange
       Elektronik, GmbH, Germany.
-    </p>
+    </p> */}
   </div>
   <div className="my-10 md:my-20 w-full">
     <img
