@@ -1,5 +1,5 @@
 import Table from "../Infra/Table";
-
+import {motion} from "motion/react"
 // const data = [
 //   {
 //     srNo: 1,
@@ -184,7 +184,12 @@ import Table from "../Infra/Table";
 // ];
 export const Machinary = () => {
   return (
-    <div className="flex flex-col justify-center items-center space-y-4 md:px-16 md:my-10 ">
+    <motion.div 
+    initial={{opacity:0,y:20}}
+          whileInView={{opacity:1,y:0}}
+          viewport={{once:true}}
+          transition={{duration:1,ease:"easeInOut"}}
+          className="flex flex-col justify-center items-center space-y-4 md:px-16 md:my-10 ">
   <div className="flex flex-col justify-center items-center mx-auto p-6 md:px-8 space-y-4 max-w-4xl mb-4">
     <h1 className="text-2xl md:text-3xl font-bold self-center md:self-start text-center md:text-left">
       Hardness & Microstructure Analysis Equipment
@@ -236,7 +241,7 @@ export const Machinary = () => {
       </table>
     </div>
   </div> */}
-</div>
+</motion.div>
 
   );
 };
