@@ -1,5 +1,11 @@
 import Card1 from "../cards/Cards";
 import { motion } from "motion/react";
+import Img17 from "../../assets/17.webp";
+import Img21 from "../../assets/21.webp";
+import Img22 from "../../assets/22.webp";
+import Img23 from "../../assets/23.webp";
+import Img24 from "../../assets/24.webp";
+import Img25 from "../../assets/25.webp";
 const Diverse = () => {
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -48,41 +54,31 @@ const Diverse = () => {
         >
           <motion.div variants={cardVariants}>
             <Card1
-              img={
-                "https://www.unithermfurnaces.com/frontend/assets/images/solution1.webp"
-              }
+              img={Img17}
               text={"Complete Heat Treatment Solutions"}
             />
           </motion.div>
           <motion.div variants={cardVariants}>
             <Card1
-              img={
-                "https://www.unithermfurnaces.com/frontend/assets/images/Carburizing-IMG-FIGMA280X385.webp"
-              }
+              img={Img21}
               text={"Carburizing"}
             />
           </motion.div>
           <motion.div variants={cardVariants}>
             <Card1
-              img={
-                "https://www.unithermfurnaces.com/frontend/assets/images/Carbonitriding-IMG285X380.webp"
-              }
+              img={Img23}
               text={"Carbonitriding"}
             />
           </motion.div>
           <motion.div variants={cardVariants}>
             <Card1
-              img={
-                "https://www.unithermfurnaces.com/frontend/assets/images/Gas-NitridingIMG-FIGMA280X385.webp"
-              }
+              img={Img24}
               text={"Gas Nitriding / Ox-Nitriding"}
             />
           </motion.div>
           <motion.div variants={cardVariants}>
             <Card1
-              img={
-                "https://www.unithermfurnaces.com/frontend/assets/images/Gas-NitrocarburizingIMG-FIGMA280X385.webp"
-              }
+              img={Img25}
               text={"Gas Nitrocarburizing / Ox-Nitriding"}
             />
           </motion.div>
