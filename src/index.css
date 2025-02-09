@@ -10,7 +10,7 @@
   display: none;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 .nav-link {
