@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { motion } from "motion/react";
 const Button2 = () => {
   return (
-    <div className="flex items-center justify-center font-bold gap-2 text-white border-2 border-white px-4 py-2 cursor-pointer hover:bg-white hover:text-purple-800 transition-all duration-700 ease-in-out">
+    <div className="flex items-center justify-center font-bold gap-2 text-white border-2 border-white px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-800 transition-all duration-700 ease-in-out">
       <span className="font-bold whitespace-nowrap">Contact Us</span>
       <span>|</span>
       <motion.span

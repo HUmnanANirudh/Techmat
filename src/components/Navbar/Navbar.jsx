@@ -37,13 +37,17 @@ const Navbar = () => {
     SetDrop(!Drop);
   };
   return (
-    <div className="text-blue-300 flex justify-between items-center p-2 border border-b-2 border-t-2 border-purple-100 ">
+    <div className="text-blue-300 flex justify-between items-center p-2 border border-b-2 border-t-2 border-blue-300 ">
       <Link to={"/"}>
       <div className="flex justify-center items-center">
         <img
           src={Logo}
           alt="Logo"
           className="w-full px-2 md:full h-12 object-contain mx-auto"
+          onClick={() => {
+            scrollToTop();
+            handleNav();
+          }}
         />
       </div>
       </Link>
@@ -135,7 +139,7 @@ const Navbar = () => {
           Contact
         </NavLink>
       </nav>
-      <div className="sm:hidden pt-1 mr-1 text-purple-400">
+      <div className="sm:hidden pt-1 mr-1 text-blue-400">
         <GiHamburgerMenu
           className="text-2xl text-center cursor-pointer"
           onClick={handleNav}
@@ -184,7 +188,7 @@ const Navbar = () => {
                     />
                   </div>
                 </div>
-                <nav className="flex flex-col justify-center items-center text-center text-base gap-4 mt-4 ">
+                <nav className="flex flex-col justify-center items-center text-center text-base gap-4 mt-4 overflow-hidden">
                   <NavLink
                     to="/"
                     className="nav-link"

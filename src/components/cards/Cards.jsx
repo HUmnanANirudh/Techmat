@@ -1,7 +1,6 @@
 const Card1 = ({ img, text }) => {
   return (
-    <div className="relative group overflow-hidden cursor-pointer mx-auto border-2 w-full border-purple-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-  {/* Image with smooth scaling effect */}
+    <div className="relative group overflow-hidden cursor-pointer mx-auto border-2 w-full border-blue-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
   <img
     src={img}
     loading="lazy"
