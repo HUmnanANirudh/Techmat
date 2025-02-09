@@ -10,7 +10,7 @@ export const ScadaQualityTools = () => {
         <Navbar />
       </div>
       <Head
-        img={Img26}
+        img={"https://www.gkexpertise.com/wp-content/uploads/2024/02/scada-systems.jpg"}
         text={"SCADA System"}
       />
       <div className="flex flex-col justify-center items-start space-y-4 p-6 md:p-20">
@@ -37,8 +37,7 @@ export const ScadaQualityTools = () => {
   </div>
   <div className="my-10 md:my-20 w-full">
     <img
-      src="http://www.ic-systems.ps/get_img?NrArticle=195&NrImage=1"
-      alt="SCADA System"
+      src={Img26}
       className="w-full object-cover shadow-lg my-4 max-h-[400px] sm:max-h-[500px] md:max-h-[600px]"
     />
   </div>
