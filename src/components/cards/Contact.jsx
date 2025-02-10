@@ -9,6 +9,7 @@ const scrollToTop = (delay = 500) => {
 };
 import img1 from "../../assets/4.webp";
 import Img16 from "../../assets/16.webp";
+import Img27 from "../../assets/27.webp";
 const Contact = () => {
   return (
     <motion.div
@@ -20,7 +21,7 @@ const Contact = () => {
       <div className="relative w-full max-w-screen-lg">
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent z-10"></div>
         <img
-          src={img1}
+          src={Img27}
           loading="lazy"
           className="w-full h-60 object-cover sm:h-80 md:h-60 lg:h-72"
           alt="Heat Treatment Solutions"
