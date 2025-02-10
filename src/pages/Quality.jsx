@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Quality1 from "../assets/Quality.png";
 import QualityPolicy from "../assets/QUALITY_POLICY.webp";
 import Policy from "../assets/QUALITY_POLICY.pdf";
+import Img29 from "../assets/29.webp";
 const Quality = () => {
   return (
     <div className="flex flex-col items-center gap-2">
@@ -68,7 +69,7 @@ const Quality = () => {
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-center space-y-6 mt-10 md:mt-0">
             <img
-              src={QualityPolicy}
+              src={Img29}
               alt="Quality Policy"
               className="w-full border-2 border-gray-200 shadow-lg max-w-lg object-contain"
             />
