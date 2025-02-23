@@ -6,6 +6,7 @@ import Head from "../components/Hero/Head";
 import Info from "../components/Home/Info";
 import Navbar from "../components/Navbar/Navbar";
 import Img11 from "../assets/11.webp";
+import TeamSection from "../components/About/TeamSection";
 
 const About = () =>{
     return(
@@ -16,6 +17,7 @@ const About = () =>{
       <Head img={Img11} text={"About Us"}/>
       <CompanyInfo/>
       <Mission/>
+      <TeamSection/>
       <Timeline/>
       <Info/>
       <Footer/>

@@ -12,7 +12,7 @@ const Info2 = () => {
         <img
           src={Img11}
           alt="Background"
-          className="w-full h-auto object-cover hidden sm:block"
+          className="w-full h-96 object-cover hidden sm:block"
         />
         <div className="sm:absolute sm:top-1/3 flex justify-center items-center">
           <Mail />
