@@ -30,7 +30,7 @@ const CompanyInfo = () => {
   whileInView={{opacity:1,x:0}}
   viewport={{once:true}}
   transition={{duration:1,ease:"easeInOut"}} className="w-full md:w-1/2 flex justify-center">
-    <div className="w-80 md:w-96 lg:w-full h-auto">
+    <div className="w-96 md:w-96 lg:w-full h-auto">
       <img
         src={Img8}
         alt="Heat treatment equipment"

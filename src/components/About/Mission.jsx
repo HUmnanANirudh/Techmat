@@ -52,7 +52,7 @@ const Mission = () => {
       <div className="relative flex flex-col sm:flex-col md:flex-row justify-center items-start gap-8">
         <motion.img
           src={Img6}
-          className="w-full p-8 sm:p-0 md:h-72 lg:h-80 object-cover rounded-md md:shadow-2xl sm:border-2 sm:border-blue-200"
+          className="w-full p-8 sm:p-0 md:h-72 lg:h-80 object-cover rounded-lg md:shadow-2xl sm:border-2 sm:border-blue-200"
           alt="Mission Image"
           initial={{ opacity: 0, scale: 0.9 }} 
           whileInView={{ opacity: 1, scale: 1 }} 
@@ -69,7 +69,7 @@ const Mission = () => {
         >
           <motion.img
             src={Img5}
-            className="hidden md:block w-full h-64 object-cover rounded-md shadow-2xl border-2 border-blue-200"
+            className="hidden md:block w-full h-64 object-cover rounded-lg shadow-2xl border-2 border-blue-200"
             alt="Vision Image"
             whileHover={{ scale: 1.05 }}
           />

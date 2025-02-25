@@ -1,4 +1,8 @@
 import {motion} from "motion/react"
+import DV from "../../assets/D.V.Kalra.webp"
+import GK from "../../assets/GAURAV.webp"
+import SA from "../../assets/SANJEEV.webp"
+import TK from "../../assets/TUSHAR.webp"
 const TeamCard = ({ name,img, currentRole, previousRoles, education, delay }) => (
   <motion.div
     initial={{ opacity: 0, y: 50, scale: 0.95 }}
@@ -69,22 +73,36 @@ const TeamSection = () => {
   const teamData = [
     {
       name: "D.V. Kalra",
-      img : "https://www.allstaffresources.com.au/wp-content/uploads/2020/11/Team-Member-Male-Placeholder-720x720.png",
+      img : DV,
       currentRole: "Managing Director & Founder Techno",
       previousRoles: "IRDMech analysis (I)Ltd, National Productivity Council (Sr.Consultant), Bhabha Atomic Research Centre Bombay (Scientific Assistant)",
       education: "BSc(With PCM), BE (Metallurgy) from Associate Members of Engineers (AMIE), Post Graduate Certificate Course Plant Engineering",
     },
     {
       name: "Gaurav Kalra",
-      img : "https://www.allstaffresources.com.au/wp-content/uploads/2020/11/Team-Member-Male-Placeholder-720x720.png",
+      img : GK,
       currentRole: "Director Business Development",
-      previousRoles: "Motherson Sumi, Havells India Ltd.",
+      previousRoles: "Motherson Sumi, Havells India Ltd, Havells India Ltd.",
       education: "4 Years course in Tool and Design from Indo Swiss Chandigarh, B.E.(Metallurgy) from AMIE Calcutta",
+    },
+    {
+      name: "Sanjeev Ailawadi",
+      img : SA,
+      currentRole: "Director-Technical",
+      previousRoles: "Honda Cars India Ltd,MusashiAuto Parts & Munjal Auto Components (HEROGROUP)",
+      education: "MBA(Marketing) B.E .(Metallurgy",
+    },
+    {
+      name: "Tushar Kalra",
+      img : TK,
+      currentRole: "Director-Commercial",
+      previousRoles: "IBM Global Process Services",
+      education: "BCA",
     }
   ];
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4 md:px-8">
+    <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4 md:px-8 md:my-20">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
